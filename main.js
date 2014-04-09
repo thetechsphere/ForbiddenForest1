@@ -8,7 +8,7 @@ Game={};
 		Game.Init=function()
 		{
 			alert("No I Am Not!");
-			Game.StartMe=fucntion(what)
+			Game.StartMe=function(what)
 			{
 				if(what == "JERK"){
 					alert("No I Am Not!");
