@@ -1,0 +1,25 @@
+body{
+	background-color: rgb(188,111,68);
+}
+
+.titlebar{
+	margin: -8px;
+	padding: 3px;
+	color: silver;
+	background-color: grey;
+	border-bottom: 2px groove grey;
+}
+
+.titlebar a {
+	color: black;
+	text-decoration: none;
+}
+
+.titlebar a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+.titlebar b {
+	color: rgb(12,46,0);
+}
