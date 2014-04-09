@@ -1,8 +1,27 @@
-ForbiddenForest
-===============
-
-Created by: Daniel Jajliardo
-Contact Me At: DanielJajliardo@gmail.com
-Check Out My Website: www.chessmenink.tk
-
+################################
+## Forbidden Forest
+## Version: 0.0.02
+## Authors:  Daniel "TNTWZRD" Jajliardo and Corbin "Spritsinz" Matschull
+## Contact Us: Daniel: DanielJajliardo@gmail.com, Corbin: jquery9dev@gmail.com
+## Our Website: www.chessmenink.tk
+################################ 
+##/////////MANUAL///////////////
+#####
+## Chapter 1, Basic Movement.
+## 
+## 
+##
+##
+##
+##
+## 
+##
+##
+##
+##
+## 
+##
+##
+##
+##
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
