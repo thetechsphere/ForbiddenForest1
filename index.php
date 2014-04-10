@@ -19,26 +19,28 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <script type="text/javascript" src="achevements.js"></script>
 <br>
 
-
-<table width="100%">
+<table style="text-align: center; margin: auto;" width="75%">
 <tr>
-<td width="33%">
-<button type="button" onClick="Game.Mine()">Mine</button><br>
-<button type="button" onClick="Game.Dig()">Dig</button></br>
-<button type="button" onClick="Game.ChopTrees()">Chop Nearby Trees</button><br>
-<button type="button" onClick="Game.Status()">Status</button>
+<td>
+<div id="menu">
+<a onClick="Game.Pick()"><img src="Images/Pick-Normal.png"></a><br>
+<a onClick="Game.Axe()"><img src="Images/Axe-Normal.png"></a><br>
+<a onClick="Game.Dig()"><img src="Images/Shovel-Normal.png"></a><br>
+</div>
 </td>
-<td width="33%">
-<h3 id="Stone">Stone: 0</h3>
-<h3 id="Iron">Iron: 0</h3>
-<h3 id="Dirt">Dirt: 0</h3>
-<h3 id="Wood">Wood: 0</h3>
+<td width="25%">
+<span id="Stone">Stone: 0 <span><br>
+<span id="Iron">Iron: 0 <span><br>
+<span id="Dirt">Dirt: 0 <span><br>
+<span id="Sod">Sod: 0 <span><br>
+<span id="Wood">Wood: 0 <span><br>
+<span id="Leaves">Leaves: 0 <span><br>
 </td>
-<td width="33%">
-<h1 id="upgrades"></h1>
+<td>
+<div id="menu">
+<a onClick="Game.PickUpgrade()"><img src="Images/Pick-upgrade.png"></a><br>
+</div>
 </td>
-
-
 </tr>
 
 </body>	
