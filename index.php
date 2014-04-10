@@ -22,17 +22,17 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <td>
 <div id="menu">
 <a id="Pick"><img src="Images/Pick-Normal.png"></a><br>
-<a onClick="Game.Axe()"><img src="Images/Axe-Normal.png"></a><br>
-<a onClick="Game.Dig()"><img src="Images/Shovel-Normal.png"></a><br>
+<a id="Axe"><img src="Images/Axe-Normal.png"></a><br>
+<a id="Shovel"><img src="Images/Shovel-Normal.png"></a><br>
 </div>
 </td>
 <td width="25%">
 <span id="Stone">Stone: 0 </span><br>
 <span id="Iron">Iron: 0 </span><br>
-<span id="Dirt">Dirt: 0 </span><br>
-<span id="Sod">Sod: 0 </span><br>
 <span id="Wood">Wood: 0 </span><br>
 <span id="Leaves">Leaves: 0 </span><br>
+<span id="Dirt">Dirt: 0 </span><br>
+<span id="Sod">Sod: 0 </span><br>
 </td>
 <td>
 <div id="menu">

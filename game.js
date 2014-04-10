@@ -1,4 +1,7 @@
 Game = {};
+Game.ToolLevels = {};
+
+Game.ToolLevels.PickLevel = 1;
 
 Game.Iron = 0;
 Game.Stone = 0;
@@ -21,13 +24,13 @@ Game.Pick = function()
 {
 	if(Achevement.Var.MinedStone != 1){Achevement.Get.MinedStone(); }
 	
-	if((Math.random(1,6) * 6 + 1) == 1)
+	if(Math.floor(Math.random() * 6) + 1 == 1)
 	{
-		Game.Iron+=1;
+		Game.Iron = Game.Stone + Math.round((1 * (Game.ToolLevels.PickLevel / 5) + 1));
 	}
 	else
 	{
-		Game.Stone+=1;
+		Game.Stone = Game.Stone + Math.round((1 * (Game.ToolLevels.PickLevel / 5) + 1));
 	}
 	
 	Game.Update();
@@ -38,7 +41,7 @@ Game.Axe = function()
 {
 	if(Achevement.Var.ChopTree != 1){Achevement.Get.ChoppedTree(); }
 	
-	if((Math.random(1,6) * 6 + 1) == 1)
+	if(Math.floor(Math.random() * 6) + 1 == 1)
 	{
 		Game.Leaves+=1;
 	}
@@ -55,7 +58,7 @@ Game.Dig = function()
 {
 	if(Achevement.Var.DugDirt != 1){Achevement.Get.DugDirt(); }
 	
-	if((Math.random(1,6) * 6 + 1) == 1)
+	if(Math.floor(Math.random() * 6) + 1 == 1)
 	{
 		Game.Sod+=1;
 	}
@@ -70,5 +73,5 @@ Game.Dig = function()
 
 Game.PickUpgrade = function()
 {
-
+	
 }

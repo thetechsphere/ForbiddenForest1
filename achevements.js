@@ -13,10 +13,10 @@ Achevement.Get.MinedStone = function()
 	Achevement.Var.MinedStone = 1;
 }
 
-Achevement.Get.DigDirt = function()
+Achevement.Get.DugDirt = function()
 {
 	Achevement.Alert("Dug Dirt");
-	Achevement.Var.DigDirt = 1;
+	Achevement.Var.DugDirt = 1;
 }
 
 Achevement.Get.ChoppedTree = function()
