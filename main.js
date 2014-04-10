@@ -39,3 +39,18 @@ Main = {};
 			});
 		}
 	);
+	
+	$(
+		function(){
+			$("#PUpgrade").click(function(event) 
+			{
+				event.preventDefault();
+				if(true)
+				{
+					Game.ToolLevels.PickLevel++;
+				}
+			});
+		}
+	);
+	
+	

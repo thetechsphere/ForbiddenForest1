@@ -18,6 +18,8 @@ Game.Update = function()
 	document.getElementById('Sod').innerHTML =  ("Sod: " + Game.Sod);
 	document.getElementById('Wood').innerHTML =  ("Wood: " + Game.Wood);
 	document.getElementById('Leaves').innerHTML =  ("Leaves: " + Game.Leaves);
+	
+	Game.ToolLevels.MiningSpeed = Math.round((Game.ToolLevels.PickLevel / 5) + 1);
 }
 
 Game.Pick = function()

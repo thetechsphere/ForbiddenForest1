@@ -36,12 +36,11 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 </td>
 <td>
 <div id="menu">
-<a onClick="Game.PickUpgrade()"><img src="Images/Pick-upgrade.png"></a><br>
+<a id="PUpgrade"><img src="Images/Pick-upgrade.png"></a><br>
 </div>
 </td>
 </tr>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="Jquerry.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="game.js"></script>
 <script type="text/javascript" src="achevements.js"></script>
