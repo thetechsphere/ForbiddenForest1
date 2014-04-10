@@ -22,5 +22,5 @@ Achevement.Get.DigDirt = function()
 Achevement.Get.ChoppedTree = function()
 {
 	Achevement.Alert("Chopped A Tree");
-	Achevement.Var.ChoppTree = 1;
+	Achevement.Var.ChopTree = 1;
 }

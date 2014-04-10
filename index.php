@@ -29,12 +29,12 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 </div>
 </td>
 <td width="25%">
-<span id="Stone">Stone: 0 <span><br>
-<span id="Iron">Iron: 0 <span><br>
-<span id="Dirt">Dirt: 0 <span><br>
-<span id="Sod">Sod: 0 <span><br>
-<span id="Wood">Wood: 0 <span><br>
-<span id="Leaves">Leaves: 0 <span><br>
+<span id="Stone">Stone: 0 </span><br>
+<span id="Iron">Iron: 0 </span><br>
+<span id="Dirt">Dirt: 0 </span><br>
+<span id="Sod">Sod: 0 </span><br>
+<span id="Wood">Wood: 0 </span><br>
+<span id="Leaves">Leaves: 0 </span><br>
 </td>
 <td>
 <div id="menu">
