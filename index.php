@@ -15,15 +15,13 @@
 Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://www.chessmenink.tk/">ChessmenInk</a>.
  Written And Scripted By: <a href="mailto:danieljajliardo@gmail.com">Daniel Jajliardo</a>, and Corbin M. 			<b>V 0.0.03</b>
 </div>
-<script type="text/javascript" src="main.js"></script>
-<script type="text/javascript" src="achevements.js"></script>
 <br>
 
 <table style="text-align: center; margin: auto;" width="75%">
 <tr>
 <td>
 <div id="menu">
-<a onClick="Game.Pick()"><img src="Images/Pick-Normal.png"></a><br>
+<a id="Pick"><img src="Images/Pick-Normal.png"></a><br>
 <a onClick="Game.Axe()"><img src="Images/Axe-Normal.png"></a><br>
 <a onClick="Game.Dig()"><img src="Images/Shovel-Normal.png"></a><br>
 </div>
@@ -43,5 +41,9 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 </td>
 </tr>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="game.js"></script>
+<script type="text/javascript" src="achevements.js"></script>
 </body>	
 </html>
