@@ -3,7 +3,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/ico" href="favicon.ico">
+	<link rel="icon" type="image/ico" href="Images/favicon.ico">
 	<title>
 		Epic World
 	</title>
