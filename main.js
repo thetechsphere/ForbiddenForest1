@@ -1,7 +1,5 @@
 Main = {};
 //Instantiate main game function
-
-
 	$(
 	function(){
 	//Pickaxe waits for click here. Calls event.
