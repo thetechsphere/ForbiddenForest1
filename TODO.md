@@ -1,0 +1,40 @@
+###############   #########    ########        #########
+      ##        ##         ##  ##      ##    ##         ##
+      ##        ##         ##  ##       ##   ##         ##
+      ##        ##         ##  ##       ##   ##         ##
+      ##        ##         ##  ##       ##   ##         ##   
+      ##        ##         ##  ##       ##   ##         ##
+      ##        ##         ##  ##       ##   ##         ##
+      ##        ##         ##  ##       ##   ##         ##
+      ##        ##         ##  ##       ##   ##         ##
+      ##        ##         ##  ##      ##    ##         ##
+      ##          #########    ########        #########
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+PLEASE ADD TO THIS LIST WHERE YOU SEE FIT!
+WHEN A TASK HAS BEEN COMPLETED MARK THE FIRST LETTER OF THE TASK WITH TWO(2) HASHTAGS!
+Example:
+Uncompleted Task: Fix up rendering engine
+Completed Task: ##Fix up rendering engine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This todo is catagorized by:
+Main List:
+
+TODO in "filename":
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+PUT TODOS BELOW THIS LINE
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+TODO's in main.js:
+  
+  1.Change probability of getting leaves to a lower chance.
+  2.
+  3.
+  4.
+  5.
+  6.
+  7.
+  8.
+  9.
+  10.
+  11.
+  12.
+  13.
