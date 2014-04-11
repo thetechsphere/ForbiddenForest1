@@ -10,9 +10,13 @@ Achievement.Get = {};
 *And then Achievenment is the main superclass for this whole file.
 */
 
-
 Achievement.Alert = function(text){ 
 	alert("Achievement Get: " + text);
+}
+
+Achievement.AlertBar = function(text){ 
+	Achievement.TEXT = text;
+	document.getElementById('StatusBar').innerHTML =  ("<p>Achievement Get: " + Achievement.TEXT + "</p>");
 }
 
 Achievement.Get.MinedStone = function(){
@@ -53,3 +57,11 @@ Achievement.Get.PunchedAPig = function(){
 	Achievement.Alert("OMG! Pig Killer!");
 	Achievement.Var.PunchedAPig = 1;
 }
+
+
+Achievement.Get.Test = function(){
+
+	Achievement.AlertBar("Testing");
+	Achievement.Var.MinedStone = 1;
+}
+

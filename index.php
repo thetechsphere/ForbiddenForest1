@@ -15,6 +15,9 @@
 Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://www.chessmenink.tk/">ChessmenInk</a>.
  Written And Scripted By: <a href="mailto:danieljajliardo@gmail.com">Daniel Jajliardo</a>, and Corbin M. 			<b>V 0.0.03</b>
 </div>
+
+<div class="StatusBar"></div>
+
 <br>
 
 <table style="text-align: center; margin: auto;" width="75%">

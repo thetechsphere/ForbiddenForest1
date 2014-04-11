@@ -23,3 +23,26 @@ body{
 .titlebar b {
 	color: rgb(12,46,0);
 }
+
+.StatusBar{
+	margin: -8px;
+	padding: 3px;
+	color: silver;
+	text-align: center;
+	background-color: grey;
+	border-bottom: 2px groove grey;
+}
+
+.StatusBar a {
+	color: black;
+	text-decoration: none;
+}
+
+.StatusBar a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+.StatusBar b {
+	color: rgb(12,46,0);
+}

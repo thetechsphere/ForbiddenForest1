@@ -20,6 +20,7 @@ Game.Update = function(){
 	document.getElementById('Leaves').innerHTML =  ("Leaves: " + Game.Leaves);
 	
 	Game.ToolLevels.MiningSpeed = Math.round((Game.ToolLevels.PickLevel / 5) + 1);
+	Game.ToolLevels.RawMiningSpeed = ((Game.ToolLevels.Picklevel / 5) + 1);
 }
 
 Game.Pick = function(){
@@ -27,12 +28,12 @@ Game.Pick = function(){
 		Achievement.Get.MinedStone(); 
 	}
 	if(Math.floor(Math.random() * 6) + 1 == 1){
-		Game.Iron = Game.Iron + Math.round((1 * (Game.ToolLevels.PickLevel / 5) + 1));
+		Game.Iron = Game.Iron + Math.round((1 * (Game.ToolLevels.PickLevel / 3) + 1));
 		if(Achievement.Var.MinedIron != 1){
 			Achievement.Get.MinedIron(); 
 		}
 	} else{
-		Game.Stone = Game.Stone + Math.round((1 * (Game.ToolLevels.PickLevel / 5) + 1));
+		Game.Stone = Game.Stone + Math.round((1 * (Game.ToolLevels.PickLevel / 3) + 1));
 	}
 	Game.Update();
 
@@ -70,7 +71,8 @@ Game.Dig = function(){
 }
 
 Game.PickUpgrade = function(){
-		if(Game.Get.ToolLevels == 1){
-			
-		}
+		Game.Stone -= 50;
+		Game.Wood -= 10;
+		Game.ToolLevels.PickLevel += 1;
+		Game.Update();
 }

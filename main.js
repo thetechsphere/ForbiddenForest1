@@ -46,9 +46,13 @@ Main = {};
 			$("#PUpgrade").click(function(event) 
 			{
 				event.preventDefault();
-				if(true)
+				if(Game.Stone >= 50 && Game.Wood >= 10)
 				{
-					Game.ToolLevels.PickLevel++;
+					Game.PickUpgrade();
+				}
+				else
+				{
+					alert("50 Stone and 10 Wood Required To Upgrade Pick!");
 				}
 			});
 		}
