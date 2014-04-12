@@ -5,7 +5,6 @@
 *I am going to test save data once we get the game up and going.
 *
 *
-
 */
 
 function encode(self, text){
