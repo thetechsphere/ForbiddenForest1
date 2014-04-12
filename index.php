@@ -29,6 +29,9 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <a id="Shovel"><img src="Images/Shovel-Normal.png"></a><br>
 </div>
 </td>
+<div class="save-game" role="savegame">
+
+</div>
 <td width="25%">
 <span id="Stone">Stone: 0 </span><br>
 <span id="Iron">Iron: 0 </span><br>
@@ -43,6 +46,7 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 </div>
 </td>
 </tr>
+<script type="text/javascript" src="save-game.js"></script>
 <script type="text/javascript" src="Jquerry.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="game.js"></script>
