@@ -6,6 +6,8 @@
 *
 *
 */
+function saveGame(){
+  document.getElementById('save-button');
 
 function encode(self, text){
   var alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
@@ -38,6 +40,7 @@ function decode(self, text){
       dec += alphap[get];
       
       return dec;
-    } 
+      } 
+    }
   }
 }
