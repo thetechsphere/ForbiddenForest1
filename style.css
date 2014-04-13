@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300);
 body{
-	background:url('images/New-BG.jpg');
+	background:url('images/New-BG.jpg') no-repeat;
 	background-size:100% auto;
 	font-family: 'Roboto', sans-serif;
 }
