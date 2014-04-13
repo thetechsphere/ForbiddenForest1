@@ -84,20 +84,6 @@ Game.Dig = function(){
 	Game.Update();
 }
 
-Game.Upgrading = function(){
-	if(Game.ToolLevels.PickLevel >= 2 || Achievement.Var.Upgrading != 0){
-		Achievement.Get.Upgrading();
-		Game.Update();
-	}
-	if(Game.ToolLevels.AxeLevel >= 2 || Achievement.Var.Upgrading != 0){
-		Achievement.Get.Upgrading();
-		Game.Update();
-	}
-	if(Game.ToolLevels.ShovelLevel >= 2 || Achievement.Var.Upgrading != 0){
-		Achievement.Get.Upgrading();
-		Game.Update();
-	}
-}
 
 Game.MasterMiner = function(){
 	if(Achievement.Var.MinedStone >= 1 && Achievement.Var.MinedIron >= 1 && Achievement.Var.ChopTree >= 1 && 

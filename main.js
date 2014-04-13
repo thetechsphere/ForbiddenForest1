@@ -49,7 +49,7 @@ Main = {};
 				if(Game.Stone >= 50 && Game.Wood >= 10)
 				{
 					Game.PickUpgrade();
-					if(Achievement.Var.Upgrading != 0){ Game.Upgrading(); }
+					if(Achievement.Var.Upgrading != 0){ Achievement.get.Upgrading(); }
 				}
 				else
 				{
@@ -68,7 +68,7 @@ Main = {};
 				if(Game.Stone >= 50 && Game.Wood >= 10)
 				{
 					Game.AxeUpgrade();
-					if(Achievement.Var.Upgrading != 0){ Game.Upgrading(); }
+					if(Achievement.Var.Upgrading != 0){ Achievement.get.Upgrading(); }
 				}
 				else
 				{
@@ -87,7 +87,7 @@ Main = {};
 				if(Game.Stone >= 50 && Game.Wood >= 10)
 				{
 					Game.ShovelUpgrade();
-					if(Achievement.Var.Upgrading != 0){ Game.Upgrading(); }
+					if(Achievement.Var.Upgrading != 0){ Achievement.get.Upgrading(); }
 				}
 				else
 				{
