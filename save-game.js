@@ -10,9 +10,7 @@ LoadGame = {};
 
 SaveGame.SaveAll = function(){
 	SaveGame.All = Game.ToolLevels.PickLevel + " " + Game.Iron + " " + Game.Stone + " " + Game.Dirt + " " + Game.Sod + " " + Game.Wood + " " + Game.Leaves;
-	
 	SaveGame.EncodeText = btoa(SaveGame.All);
-	
 	//alert("Your Save Game Code: " + SaveGame.EncodeText + ", Write This Code down For Loading Use Later! :)");
 	document.getElementById('save-code').innerHTML =  ("<p>Save code, copy this and save it somewhere: " + SaveGame.EncodeText + "</p>");
 }
