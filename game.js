@@ -83,11 +83,8 @@ Game.Dig = function(){
 }
 
 Game.Upgrading = function(){
-	if(Game.ToolLevels.PickLevel > 1){
+	if(Game.ToolLevels.PickLevel >= 2){
 		Achievement.Get.Upgrading();
-	}
-	else if(Achievement.Var.Upgrading != 1){
-		Achievement.Get.Upgrading(); 
 	}	
 	Game.Update();
 }
