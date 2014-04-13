@@ -8,7 +8,7 @@
 ##/////////MANUAL///////////////
 ################################
 ## Chapter 1, Game Saving.
-## In the top Left corner of the game screen there are two buttons.
+## In the top Right corner of the game screen there are two buttons.
 ## One is for saving the game and the other is for loading the game.
 ## to save the game press the button and copy the log sting of code to a text file.
 ## to load a game press the load game button and enter that long string of code there.
