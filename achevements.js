@@ -83,7 +83,7 @@ Achievement.Get.MasterMiner = function(){
 }
 
 Achievement.Get.Upgrading = function(){
-	Achievement.Alert("Holy Crud! Major upgrade!");
-	Achievement.Var.Upgrade = 1;
+	Achievement.Alert("You Upgraded Something! Good Job!");
+	Achievement.Var.Upgrading = 1;
 }
 
