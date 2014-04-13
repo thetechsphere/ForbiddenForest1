@@ -10,8 +10,13 @@ Achievement.Get = {};
 *And then Achievenment is the main superclass for this whole file.
 */
 Achievement.Var.MinedStone = 0;
-Achievement.Var.MinedStone = 0;
-Achievement.Var.MinedStone = 0;
+Achievement.Var.MinedIron = 0;
+Achievement.Var.DugDirt = 0;
+Achievement.Var.DugSod = 0;
+Achievement.Var.ChopTree = 0;
+Achievement.Var.ChoppedLeaves = 0;
+Achievement.Var.PunchedAPig = 0;
+Achievement.Var.CheaterCheater = 0;
 Achievement.Var.MinedStone = 0;
 
 
