@@ -7,6 +7,7 @@
 
 SaveGame = {};
 LoadGame = {};
+var emptSave = alert('Invalid syntax!\nPlease paste your save code into the prompt box!');
 
 SaveGame.SaveAll = function(){
 	SaveGame.All = Game.ToolLevels.PickLevel + " " + Game.Iron + " " + Game.Stone + " " + Game.Dirt + " " + Game.Sod + " " + Game.Wood + " " + Game.Leaves;
@@ -19,6 +20,10 @@ SaveGame.SaveAll = function(){
 
 LoadGame.LoadAll = function(){
 	LoadGame.DecodeArray = atob(prompt("Save Code", "Enter Save Code To Load Game.")).split(" ");
+	
+	if(LoadGame == null){
+		alert(emptSave);
+	}
 
 	Game.ToolLevels.PickLevel = parseInt(LoadGame.DecodeArray[0]) || 0;
 	Game.Iron = parseInt(LoadGame.DecodeArray[1]) || 0;
