@@ -1,5 +1,5 @@
 /*
-*This is a rot13 cypher for game save data.
+*This is a B64 cypher for game save data.
 *Author: Corbin "Spritsinz" Matschull & Daniel "TNTWZRD" Jajliardo
 *I ported this over from Python in a quick and dirty port. 
 *I am going to test save data once we get the game up and going.
