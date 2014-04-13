@@ -46,3 +46,8 @@ body{
 .StatusBar b {
 	color: rgb(12,46,0);
 }
+
+#Link{
+	color: blue;
+	text-decoration: underline;
+}
