@@ -60,6 +60,42 @@ Main = {};
 	
 		$(
 		function(){
+			//This is a part upgrade, waits for the click, calls event.
+			$("#AUpgrade").click(function(event) 
+			{
+				event.preventDefault();
+				if(Game.Stone >= 50 && Game.Wood >= 10)
+				{
+					Game.AxeUpgrade();
+				}
+				else
+				{
+					alert("50 Stone and 10 Wood Required To Upgrade Axe!");
+				}
+			});
+		}
+	);
+	
+		$(
+		function(){
+			//This is a part upgrade, waits for the click, calls event.
+			$("#PSUpgrade").click(function(event) 
+			{
+				event.preventDefault();
+				if(Game.Stone >= 50 && Game.Wood >= 10)
+				{
+					Game.ShovelUpgrade();
+				}
+				else
+				{
+					alert("50 Stone and 10 Wood Required To Upgrade Shovel!");
+				}
+			});
+		}
+	);
+	
+		$(
+		function(){
 			//This Is For Saving The Game
 			$("#SaveGame").click(function(event) 
 			{
