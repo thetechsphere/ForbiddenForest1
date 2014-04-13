@@ -49,6 +49,7 @@ Main = {};
 				if(Game.Stone >= 50 && Game.Wood >= 10)
 				{
 					Game.PickUpgrade();
+					if(Achievement.Var.Upgrading != 0){ Game.Upgrading(); }
 				}
 				else
 				{
@@ -67,6 +68,7 @@ Main = {};
 				if(Game.Stone >= 50 && Game.Wood >= 10)
 				{
 					Game.AxeUpgrade();
+					if(Achievement.Var.Upgrading != 0){ Game.Upgrading(); }
 				}
 				else
 				{
@@ -79,12 +81,13 @@ Main = {};
 		$(
 		function(){
 			//This is a part upgrade, waits for the click, calls event.
-			$("#PSUpgrade").click(function(event) 
+			$("#SUpgrade").click(function(event) 
 			{
 				event.preventDefault();
 				if(Game.Stone >= 50 && Game.Wood >= 10)
 				{
 					Game.ShovelUpgrade();
+					if(Achievement.Var.Upgrading != 0){ Game.Upgrading(); }
 				}
 				else
 				{
