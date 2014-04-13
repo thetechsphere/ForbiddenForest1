@@ -18,7 +18,7 @@ Achievement.Var.ChoppedLeaves = 0;
 Achievement.Var.PunchedAPig = 0;
 Achievement.Var.CheaterCheater = 0;
 Achievement.Var.MinedStone = 0;
-
+Achievement.Var.MasterMiner = 0;
 
 Achievement.Alert = function(text){ 
 	alert("Achievement Get: " + text);
@@ -79,7 +79,6 @@ Achievement.Get.MasterMiner = function(){
 }
 
 Achievement.Get.Test = function(){
-
 	Achievement.AlertBar("Testing");
 	Achievement.Var.MinedStone = 1;
 }
