@@ -82,7 +82,3 @@ Achievement.Get.Test = function(){
 	Achievement.AlertBar("Testing");
 	Achievement.Var.MinedStone = 1;
 }
-
-Achievement.Get.MasterMiner = function(){
-	
-}
