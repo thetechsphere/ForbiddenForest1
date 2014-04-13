@@ -96,6 +96,7 @@ Game.PickUpgrade = function(){
 		Game.Stone -= 50;
 		Game.Wood -= 10;
 		Game.ToolLevels.PickLevel += 1;
+		if(Achievement.Var.Upgrading != 0){ Achievement.Get.Upgrading(); }
 		Game.Update();
 }
 
@@ -103,6 +104,7 @@ Game.AxeUpgrade = function(){
 		Game.Stone -= 50;
 		Game.Wood -= 10;
 		Game.ToolLevels.AxeLevel += 1;
+		if(Achievement.Var.Upgrading != 0){ Achievement.Get.Upgrading(); }
 		Game.Update();
 }
 
@@ -110,5 +112,6 @@ Game.ShovelUpgrade = function(){
 		Game.Stone -= 50;
 		Game.Wood -= 10;
 		Game.ToolLevels.AxeLevel += 1;
+		if(Achievement.Var.Upgrading != 0){ Achievement.Get.Upgrading(); }
 		Game.Update();
 }

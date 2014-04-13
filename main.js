@@ -48,7 +48,6 @@ Main = {};
 				event.preventDefault();
 				if(Game.Stone >= 50 && Game.Wood >= 10)
 				{
-					if(Achievement.Var.Upgrading != 0){ Achievement.get.Upgrading(); }
 					Game.PickUpgrade();
 				}
 				else
@@ -67,7 +66,6 @@ Main = {};
 				event.preventDefault();
 				if(Game.Stone >= 50 && Game.Wood >= 10)
 				{
-					if(Achievement.Var.Upgrading != 0){ Achievement.get.Upgrading(); }
 					Game.AxeUpgrade();
 				}
 				else
@@ -86,7 +84,6 @@ Main = {};
 				event.preventDefault();
 				if(Game.Stone >= 50 && Game.Wood >= 10)
 				{
-					if(Achievement.Var.Upgrading != 0){ Achievement.get.Upgrading(); }
 					Game.ShovelUpgrade();
 				}
 				else
