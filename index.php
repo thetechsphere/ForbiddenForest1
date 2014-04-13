@@ -21,6 +21,7 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 </div>
 
 <div id="StatusBar"></div>
+<div id="save-code"></div>
 <br>
 
 <table style="text-align: center; margin: auto;" width="75%">
