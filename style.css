@@ -8,13 +8,13 @@ body{
 .titlebar{
 	margin: -8px;
 	padding: 3px;
-	color: silver;
+	color: white;
 	background-color:rgba(0,0,0,0.7);
 	border-bottom: 2px groove grey;
 }
 
 .titlebar a {
-	color: black;
+	color: #33CCCC;
 	text-decoration: none;
 }
 
