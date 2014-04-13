@@ -73,6 +73,11 @@ Achievement.Get.CheaterCheater = function(){
 	Achievement.Var.CheaterCheater = 1;
 }
 
+Achievement.Get.MasterMiner = function(){
+	Achievement.Alert("You are now the master miner!\nGo forth and claim your land!");
+	Achievement.Var.MasterMiner = 1;
+}
+
 Achievement.Get.Test = function(){
 
 	Achievement.AlertBar("Testing");
