@@ -20,7 +20,7 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <button type="button" id="LoadGame">Load A Game</button>
 </div>
 
-<div class="StatusBar"></div>
+<div id="StatusBar"></div>
 
 <br>
 
