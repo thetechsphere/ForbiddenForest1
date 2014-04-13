@@ -37,7 +37,7 @@ function decode(self, text){
       dec += ' ';
     }else{
       var get = rotate.index[get];
-      dec += alphap[get];
+      dec += alpha[get];
       
       return dec;
       } 
