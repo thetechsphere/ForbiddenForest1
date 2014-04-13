@@ -32,6 +32,7 @@ body{
 	background-color: rgba(10,10,10,0.5);
 	text-align: center;
 	box-shadow: 2px 4px 6px black;
+	width: auto;
 }
 
 #save-code{
@@ -39,6 +40,7 @@ body{
 	background-color: rgba(10,10,10,0.5);
 	text-align: center;
 	box-shadow: 2px 4px 6px black;
+	width:auto;
 }
 #StatusBar{
 	margin: 10px 0 0 0;
