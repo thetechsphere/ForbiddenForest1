@@ -32,6 +32,7 @@ Game.Update = function(){
 	Game.ToolLevels.RawMiningSpeed = ((Game.ToolLevels.Picklevel / 5) + 1);
 	Game.MasterMiner();
 	document.getElementById('save-code').innerHTML =  ("");
+	document.getElementById('load-code').innerHTML =  ("");
 }
 
 Game.Pick = function(){
