@@ -32,6 +32,6 @@ LoadGame.LoadAll = function(){
 	Game.Leaves = parseInt(LoadGame.DecodeArray[8]) || 0;
 	
 	Game.Update();
-	alert("Game Save Successfully Loaded!");
+	//alert("Game Save Successfully Loaded!");
 	document.getElementById('load-code').innerHTML =  ("<p>Game successfully loaded</p>");
 }
