@@ -27,6 +27,13 @@ body{
 	color: #33CCCC;
 }
 
+#load-code{
+	color: whitesmoke;
+	background-color: rgba(10,10,10,0.5);
+	text-align: center;
+	box-shadow: 2px 4px 6px black;
+}
+
 #save-code{
 	color: whitesmoke;
 	background-color: rgba(10,10,10,0.5);
