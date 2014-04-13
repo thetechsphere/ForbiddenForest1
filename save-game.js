@@ -7,7 +7,6 @@
 
 SaveGame = {};
 LoadGame = {};
-var emptSave = alert('Invalid syntax!\nPlease paste your save code into the prompt box!');
 
 SaveGame.SaveAll = function(){
 	SaveGame.All = Game.ToolLevels.PickLevel + " " + Game.Iron + " " + Game.Stone + " " + Game.Dirt + " " + Game.Sod + " " + Game.Wood + " " + Game.Leaves;
