@@ -69,7 +69,7 @@ Achievement.Get.PunchedAPig = function(){
 }
 
 Achievement.Get.CheaterCheater = function(){
-	Achievement.Alert("Cheater Cheater");
+	Achievement.Alert("Master Cheater, Epic!");
 	Achievement.Var.CheaterCheater = 1;
 }
 
