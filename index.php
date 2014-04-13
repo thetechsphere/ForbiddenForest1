@@ -13,7 +13,7 @@
 
 <div class="titlebar">
 Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://www.chessmenink.tk/" target="_blank">ChessmenInk</a>.
- Written And Scripted By: <a href="mailto:danieljajliardo@gmail.com">Daniel Jajliardo</a>, and Corbin M. 			<b>V 0.0.03</b>
+ Written And Scripted By: <a href="mailto:danieljajliardo@gmail.com">Daniel Jajliardo</a>, and Corbin M. 			<b>V 0.1.02</b>
 <a type="button" href="https://github.com/Chessmenink/ForbiddenForest1" target="_blank" id="Link">Github</a>
 <a type="button" href="Readme.md" target="_Blank" id="Link">Readme-File</a>
 <button type="button" id="SaveGame">Save This Game</button>
