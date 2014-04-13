@@ -52,5 +52,6 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="game.js"></script>
 <script type="text/javascript" src="achevements.js"></script>
+<script type="text/javascript" src="testingcheats.js"></script> // This Will Require A Password To Use! LOL
 </body>	
 </html>

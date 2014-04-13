@@ -13,7 +13,7 @@ SaveGame.SaveAll = function(){
 	
 	SaveGame.EncodeText = btoa(SaveGame.All);
 	
-	alert("Your Save Game Code: " + SaveGame.EncodeText + ", Note Your Achievements will be reset if you reload, we will fix this in the future! :)");
+	alert("Your Save Game Code: " + SaveGame.EncodeText + ", Write This Code down For Loading Use Later! :)");
 
 }
 

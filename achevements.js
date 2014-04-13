@@ -58,6 +58,10 @@ Achievement.Get.PunchedAPig = function(){
 	Achievement.Var.PunchedAPig = 1;
 }
 
+Achievement.Get.CheaterCheater = function(){
+	Achievement.Alert("Cheater Cheater");
+	Achievement.Var.CheaterCheater = 1;
+}
 
 Achievement.Get.Test = function(){
 
