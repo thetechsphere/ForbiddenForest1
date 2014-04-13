@@ -20,11 +20,13 @@ Achievement.Var.CheaterCheater = 0;
 Achievement.Var.MinedStone = 0;
 Achievement.Var.MasterMiner = 0;
 
-Achievement.Alert = function(text){ 
+/*Achievement.Alert = function(text){ 
 	alert("Achievement Get: " + text);
 }
+Old Alert System
+*/
 
-Achievement.AlertBar = function(text){ 
+Achievement.Alert = function(text){ 
 	Achievement.TEXT = text;
 	document.getElementById('StatusBar').innerHTML =  ("<p>Achievement Get: " + Achievement.TEXT + "</p>");
 }
