@@ -58,4 +58,24 @@ Main = {};
 		}
 	);
 	
+		$(
+		function(){
+			//This Is For Saving The Game
+			$("#SaveGame").click(function(event) 
+			{
+				event.preventDefault();
+				SaveGame.SaveAll();
+			});
+		}
+	);
 	
+	$(
+		function(){
+			//This Is For Laoding The Game
+			$("#LoadGame").click(function(event) 
+			{
+				event.preventDefault();
+				LoadGame.LoadAll();
+			});
+		}
+	);

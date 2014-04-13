@@ -30,7 +30,8 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 </div>
 </td>
 <div class="save-game" role="savegame">
-<button type="button" id="save-button">Save your Game?</button>
+<button type="button" id="SaveGame">Save This Game</button>
+<button type="button" id="LoadGame">Load A Game</button>
 </div>
 <td width="25%">
 <span id="Stone">Stone: 0 </span><br>
