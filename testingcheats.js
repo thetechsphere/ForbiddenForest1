@@ -8,6 +8,6 @@ TestingCheats.AcheveAll = function(password)
 	}
 	for(var i in Acheve.Var)
 	{
-    	Acheve.Var[i];
+    	Acheve.Var[i] = 1;
 	}
 }
