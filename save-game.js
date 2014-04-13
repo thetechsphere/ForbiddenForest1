@@ -20,10 +20,6 @@ SaveGame.SaveAll = function(){
 
 LoadGame.LoadAll = function(){
 	LoadGame.DecodeArray = atob(prompt("Save Code", "Enter Save Code To Load Game.")).split(" ");
-	
-	if(LoadGame == null){
-		alert(emptSave);
-	}
 
 	Game.ToolLevels.PickLevel = parseInt(LoadGame.DecodeArray[0]) || 0;
 	Game.Iron = parseInt(LoadGame.DecodeArray[1]) || 0;
