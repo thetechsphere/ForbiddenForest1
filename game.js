@@ -11,6 +11,13 @@ Game.Sod = 0;
 Game.Wood = 0;
 Game.Leaves = 0;
 
+/*
+*Probabiility function is completed as thus:
+*if(Math.floor(Math.random() * rangeOfRandom == 1){
+*	completedGiveFunction;
+*}
+*/
+
 Game.Update = function(){
 	document.getElementById('Stone').innerHTML =  ("Stone: " + Game.Stone);
 	document.getElementById('Iron').innerHTML =  ("Iron: " + Game.Iron);
@@ -27,6 +34,10 @@ Game.Pick = function(){
 	if(Achievement.Var.MinedStone != 1){
 		Achievement.Get.MinedStone(); 
 	}
+	/*
+	*Get math floor and create a random chance(1-6)
+	*If it equals 1, get iron
+	*/
 	if(Math.floor(Math.random() * 6) + 1 == 1){
 		Game.Iron = Game.Iron + Math.round((1 * (Game.ToolLevels.PickLevel / 3) + 1));
 		if(Achievement.Var.MinedIron != 1){
