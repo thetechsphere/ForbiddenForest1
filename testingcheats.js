@@ -4,7 +4,7 @@ TestingCheats.AcheveAll = function(password)
 {
 	if(password != "chessmenink")
 	{ 
-		alert("Testing Password Incorrect"); 
+		alert("Password Incorrect!\nNo hax0r for you!"); 
 	}
 	else
 	{
