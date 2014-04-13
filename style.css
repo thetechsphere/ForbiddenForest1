@@ -1,5 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
 body{
 	background-color: rgb(188,111,68);
+	font-family: 'Roboto', sans-serif;
 }
 
 .titlebar{
