@@ -26,8 +26,8 @@ PUT TODOS BELOW THIS LINE
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 TODO's in main.js:
   
-  1.Change probability of getting leaves to a lower chance.
-  2.
+  1. ## Change probability of getting leaves to a lower chance.
+  2. ## Save And Load Game 
   3.
   4.
   5.
