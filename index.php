@@ -43,6 +43,8 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <td>
 <div id="menu">
 <a id="PUpgrade"><img src="Images/Pick-upgrade.png"></a><br>
+<a id="AUpgrade"><img src="Images/Axe-upgrade.png"></a><br>
+<a id="SUpgrade"><img src="Images/Shovel-upgrade.png"></a><br>
 </div>
 </td>
 </tr>
