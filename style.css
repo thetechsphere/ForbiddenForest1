@@ -9,7 +9,7 @@ body{
 	margin: -8px;
 	padding: 3px;
 	color: silver;
-	background-color: grey;
+	background-color:rgba(0,0,0,0.7);
 	border-bottom: 2px groove grey;
 }
 
