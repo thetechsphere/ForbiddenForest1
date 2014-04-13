@@ -14,6 +14,8 @@
 <div class="titlebar">
 Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://www.chessmenink.tk/">ChessmenInk</a>.
  Written And Scripted By: <a href="mailto:danieljajliardo@gmail.com">Daniel Jajliardo</a>, and Corbin M. 			<b>V 0.0.03</b>
+ <button type="button" id="SaveGame">Save This Game</button>
+<button type="button" id="LoadGame">Load A Game</button>
 </div>
 
 <div class="StatusBar"></div>
@@ -29,10 +31,6 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <a id="Shovel"><img src="Images/Shovel-Normal.png"></a><br>
 </div>
 </td>
-<div class="save-game" role="savegame">
-<button type="button" id="SaveGame">Save This Game</button>
-<button type="button" id="LoadGame">Load A Game</button>
-</div>
 <td width="25%">
 <span id="Stone">Stone: 0 </span><br>
 <span id="Iron">Iron: 0 </span><br>
