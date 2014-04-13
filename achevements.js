@@ -69,7 +69,7 @@ Achievement.Get.PunchedAPig = function(){
 }
 
 Achievement.Get.CheaterCheater = function(){
-	Achievement.Alert("Master Cheater, Not Bad! ;)");
+	Achievement.Alert("Cheater Cheater");
 	Achievement.Var.CheaterCheater = 1;
 }
 
@@ -79,3 +79,6 @@ Achievement.Get.Test = function(){
 	Achievement.Var.MinedStone = 1;
 }
 
+Achievement.Get.MasterMiner = function(){
+	
+}
