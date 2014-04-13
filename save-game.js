@@ -15,7 +15,6 @@ SaveGame.SaveAll = function(){
 	
 	//alert("Your Save Game Code: " + SaveGame.EncodeText + ", Write This Code down For Loading Use Later! :)");
 	document.getElementById('save-code').innerHTML =  ("<p>Save code, copy this and save it somewhere: " + SaveGame.EncodeText + "</p>");
-	document.getElementByID('save-code').innerHTML = ('');
 }
 
 LoadGame.LoadAll = function(){
