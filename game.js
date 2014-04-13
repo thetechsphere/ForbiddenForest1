@@ -81,6 +81,13 @@ Game.Dig = function(){
 	Game.Update();
 }
 
+Game.MasterMiner = function(){
+	if(Achievement.Var.MinedStone == 1 && Achievement.Var.MinedIron == 1 && Achievement.Var.ChopTree == 1 && 
+	Achievement.Var.ChoppedLeaves == 1 && Achievement.Var.DugDirt == 1 && Achievement.Var.DugSod == 1){
+		Achievement.Get.MasterMiner();
+	}
+}
+
 Game.PickUpgrade = function(){
 		Game.Stone -= 50;
 		Game.Wood -= 10;
