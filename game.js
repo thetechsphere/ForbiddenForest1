@@ -4,6 +4,8 @@ Game.ToolLevels = {};
 
 Game.Get.ToolLevels = {};
 Game.ToolLevels.PickLevel = 1;
+Game.ToolLevels.AxeLevel = 1;
+Game.ToolLevels.ShovelLevel = 1;
 Game.Iron = 0;
 Game.Stone = 0;
 Game.Dirt = 0;
@@ -58,12 +60,12 @@ Game.Axe = function(){
 	}
 	
 	if(Math.floor(Math.random() * 20) + 1 == 1){
-		Game.Leaves+=1;
+		Game.Leaves = Game.Leaves + Math.round((1 * (Game.ToolLevels.AxeLevel / 3) + 1));
 		if(Achievement.Var.ChoppedLeaves != 1){
 			Achievement.Get.ChoppedLeaves(); 
 		}
 	}else{
-		Game.Wood+=1;
+		Game.Wood = Game.Wood + Math.round((1 * (Game.ToolLevels.PickLevel / 3) + 1));
 	}
 	Game.Update();
 }
@@ -73,12 +75,12 @@ Game.Dig = function(){
 		Achievement.Get.DugDirt(); 
 	}
 	if(Math.floor(Math.random() * 6) + 1 == 1){
-		Game.Sod+=1;
+		Game.Sod = Game.Sod + Math.round((1 * (Game.ToolLevels.ShovelLevel / 3) + 1));
 		if(Achievement.Var.DugSod != 1){
 			Achievement.Get.DugSod(); 
 		}
 	}else{
-		Game.Dirt+=1;
+		Game.Dirt = Game.Dirt + Math.round((1 * (Game.ToolLevels.ShovelLevel / 3) + 1));
 	}
 	Game.Update();
 }
@@ -87,7 +89,15 @@ Game.Upgrading = function(){
 	if(Game.ToolLevels.PickLevel >= 2 || Achievement.Var.Upgrading != 0){
 		Achievement.Get.Upgrading();
 		Game.Update();
-	}	
+	}
+	if(Game.ToolLevels.AxeLevel >= 2 || Achievement.Var.Upgrading != 0){
+		Achievement.Get.Upgrading();
+		Game.Update();
+	}
+	if(Game.ToolLevels.ShovelLevel >= 2 || Achievement.Var.Upgrading != 0){
+		Achievement.Get.Upgrading();
+		Game.Update();
+	}
 }
 
 Game.MasterMiner = function(){
@@ -101,5 +111,19 @@ Game.PickUpgrade = function(){
 		Game.Stone -= 50;
 		Game.Wood -= 10;
 		Game.ToolLevels.PickLevel += 1;
+		Game.Update();
+}
+
+Game.AxeUpgrade = function(){
+		Game.Stone -= 50;
+		Game.Wood -= 10;
+		Game.ToolLevels.AxeLevel += 1;
+		Game.Update();
+}
+
+Game.ShovelUpgrade = function(){
+		Game.Stone -= 50;
+		Game.Wood -= 10;
+		Game.ToolLevels.AxeLevel += 1;
 		Game.Update();
 }
