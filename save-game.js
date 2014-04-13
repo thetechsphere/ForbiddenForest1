@@ -9,7 +9,7 @@ SaveGame = {};
 LoadGame = {};
 
 SaveGame.SaveAll = function(){
-	SaveGame.All = Game.ToolLevels.PickLevel + " " + Game.Iron + " " + Game.Stone + " " + Game.Dirt + " " + Game.Sod + " " + Game.Wood + " " + Game.Leaves;
+	SaveGame.All = Game.ToolLevels.ShovelLevel + " " + Game.ToolLevels.AxeLevel + " " + Game.ToolLevels.PickLevel + " " + Game.Iron + " " + Game.Stone + " " + Game.Dirt + " " + Game.Sod + " " + Game.Wood + " " + Game.Leaves;
 	
 	SaveGame.EncodeText = btoa(SaveGame.All);
 	
@@ -20,13 +20,15 @@ SaveGame.SaveAll = function(){
 LoadGame.LoadAll = function(){
 	LoadGame.DecodeArray = atob(prompt("Save Code", "Enter Save Code To Load Game.")).split(" ");
 
-	Game.ToolLevels.PickLevel = parseInt(LoadGame.DecodeArray[0]) || 0;
-	Game.Iron = parseInt(LoadGame.DecodeArray[1]) || 0;
-	Game.Stone = parseInt(LoadGame.DecodeArray[2]) || 0;
-	Game.Dirt = parseInt(LoadGame.DecodeArray[3]) || 0;
-	Game.Sod = parseInt(LoadGame.DecodeArray[4]) || 0;
-	Game.Wood = parseInt(LoadGame.DecodeArray[5]) || 0;
-	Game.Leaves = parseInt(LoadGame.DecodeArray[6]) || 0;
+	Game.ToolLevels.ShovelLevel = parseInt(LoadGame.DecodeArray[0]) || 0;
+	Game.ToolLevels.AxeLevel = parseInt(LoadGame.DecodeArray[1]) || 0;
+	Game.ToolLevels.PickLevel = parseInt(LoadGame.DecodeArray[2]) || 0;
+	Game.Iron = parseInt(LoadGame.DecodeArray[3]) || 0;
+	Game.Stone = parseInt(LoadGame.DecodeArray[4]) || 0;
+	Game.Dirt = parseInt(LoadGame.DecodeArray[5]) || 0;
+	Game.Sod = parseInt(LoadGame.DecodeArray[6]) || 0;
+	Game.Wood = parseInt(LoadGame.DecodeArray[7]) || 0;
+	Game.Leaves = parseInt(LoadGame.DecodeArray[8]) || 0;
 	
 	Game.Update();
 	alert("Game Save Successfully Loaded!");
