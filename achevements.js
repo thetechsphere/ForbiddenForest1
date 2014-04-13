@@ -9,6 +9,11 @@ Achievement.Get = {};
 *Achievement.Get is used for (obviously) getting the achievement.
 *And then Achievenment is the main superclass for this whole file.
 */
+Achievement.Var.MinedStone = 0;
+Achievement.Var.MinedStone = 0;
+Achievement.Var.MinedStone = 0;
+Achievement.Var.MinedStone = 0;
+
 
 Achievement.Alert = function(text){ 
 	alert("Achievement Get: " + text);
