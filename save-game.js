@@ -8,11 +8,6 @@
 SaveGame = {};
 LoadGame = {};
 
-Achievement.Alert = function(text){ 
-	Achievement.TEXT = text;
-	document.getElementById('StatusBar').innerHTML =  ("<p>Achievement Get: " + Achievement.TEXT + "</p>");
-}
-
 SaveGame.SaveAll = function(){
 	SaveGame.All = Game.ToolLevels.PickLevel + " " + Game.Iron + " " + Game.Stone + " " + Game.Dirt + " " + Game.Sod + " " + Game.Wood + " " + Game.Leaves;
 	
