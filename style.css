@@ -26,26 +26,25 @@ body{
 	color: rgb(12,46,0);
 }
 
-.StatusBar{
-	margin: -8px;
-	padding: 3px;
+#StatusBar{
+	margin: 10px 0 0 0;
+	
 	color: silver;
 	text-align: center;
 	background-color: grey;
-	border-bottom: 2px groove grey;
 }
 
-.StatusBar a {
+#StatusBar a {
 	color: black;
 	text-decoration: none;
 }
 
-.StatusBar a:hover {
+#StatusBar a:hover {
 	color: blue;
 	text-decoration: underline;
 }
 
-.StatusBar b {
+#StatusBar b {
 	color: rgb(12,46,0);
 }
 
