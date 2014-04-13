@@ -88,10 +88,8 @@ Game.Upgrading = function(){
 	}
 	else if(Achievement.Var.Upgrading != 1){
 		Achievement.Get.Upgrading(); 
-	}
-	
+	}	
 	Game.Update();
-
 }
 
 Game.MasterMiner = function(){
