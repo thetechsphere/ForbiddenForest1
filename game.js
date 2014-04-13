@@ -29,6 +29,7 @@ Game.Update = function(){
 	Game.ToolLevels.MiningSpeed = Math.round((Game.ToolLevels.PickLevel / 5) + 1);
 	Game.ToolLevels.RawMiningSpeed = ((Game.ToolLevels.Picklevel / 5) + 1);
 	Game.MasterMiner();
+	Game.Upgrading();
 }
 
 Game.Pick = function(){
@@ -83,10 +84,10 @@ Game.Dig = function(){
 }
 
 Game.Upgrading = function(){
-	if(Game.ToolLevels.PickLevel >= 2){
+	if(Game.ToolLevels.PickLevel >= 2 || Achievement.Var.Upgrading != 0){
 		Achievement.Get.Upgrading();
+		Game.Update();
 	}	
-	Game.Update();
 }
 
 Game.MasterMiner = function(){

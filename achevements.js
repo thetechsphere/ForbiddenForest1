@@ -81,13 +81,8 @@ Achievement.Get.MasterMiner = function(){
 	Achievement.Var.MasterMiner = 1;
 }
 
-Achievement.Get.Test = function(){
-	Achievement.AlertBar("Testing");
-	Achievement.Var.MinedStone = 1;
-}
-
 Achievement.Get.Upgrading = function(){
-	Achievement.AlertBar("Holy Crud! Major updgrade!");
+	Achievement.Alert("Holy Crud! Major updgrade!");
 	Achievement.Var.Upgrade = 1;
 }
 
