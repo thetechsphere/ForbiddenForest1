@@ -19,6 +19,7 @@ Achievement.Var.PunchedAPig = 0;
 Achievement.Var.CheaterCheater = 0;
 Achievement.Var.MinedStone = 0;
 Achievement.Var.MasterMiner = 0;
+Achievemnen.Var.Upgrading = 0;
 
 /*Achievement.Alert = function(text){ 
 	alert("Achievement Get: " + text);
@@ -84,3 +85,9 @@ Achievement.Get.Test = function(){
 	Achievement.AlertBar("Testing");
 	Achievement.Var.MinedStone = 1;
 }
+
+Achievement.Get.Upgrading = function(){
+	Achievement.AlertBar("Holy Crud! Major updgrade!");
+	Achievement.Var.Upgrade = 1;
+}
+
