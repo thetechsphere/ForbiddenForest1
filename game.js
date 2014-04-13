@@ -82,10 +82,22 @@ Game.Dig = function(){
 	Game.Update();
 }
 
+Game.Upgrading = function(){
+	if(Game.ToolLevels.PickLevel > 1){
+		Achievement.Get.Upgrading();
+	}
+	else if(Achievement.Var.Upgrading != 1){
+		Achievement.Get.Upgrading(); 
+	}
+	
+	Game.Update();
+
+}
+
 Game.MasterMiner = function(){
 	if(Achievement.Var.MinedStone >= 1 && Achievement.Var.MinedIron >= 1 && Achievement.Var.ChopTree >= 1 && 
-	Achievement.Var.ChoppedLeaves >= 1 && Achievement.Var.DugDirt >= 1 && Achievement.Var.DugSod >= 1){
-		Achievement.Get.MasterMiner();
+		Achievement.Var.ChoppedLeaves >= 1 && Achievement.Var.DugDirt >= 1 && Achievement.Var.DugSod >= 1){
+			Achievement.Get.MasterMiner();
 	}
 }
 

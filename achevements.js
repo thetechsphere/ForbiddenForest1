@@ -19,7 +19,7 @@ Achievement.Var.PunchedAPig = 0;
 Achievement.Var.CheaterCheater = 0;
 Achievement.Var.MinedStone = 0;
 Achievement.Var.MasterMiner = 0;
-Achievemnen.Var.Upgrading = 0;
+Achievement.Var.Upgrading = 0;
 
 /*Achievement.Alert = function(text){ 
 	alert("Achievement Get: " + text);
