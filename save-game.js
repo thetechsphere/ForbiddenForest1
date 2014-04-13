@@ -33,5 +33,5 @@ LoadGame.LoadAll = function(){
 	
 	Game.Update();
 	alert("Game Save Successfully Loaded!");
-	document.getElementById('load-code').innerHTML =  ("Game successfully loaded "</p>");
+	document.getElementById('load-code').innerHTML =  ("<p>Game successfully loaded</p>");
 }
