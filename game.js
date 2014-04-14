@@ -28,8 +28,7 @@ Game.Update = function(){
 	document.getElementById('Wood').innerHTML =  ("Wood: " + Game.Wood);
 	document.getElementById('Leaves').innerHTML =  ("Leaves: " + Game.Leaves);
 	
-	Game.ToolLevels.MiningSpeed = Math.round((Game.ToolLevels.PickLevel / 5) + 1);
-	Game.ToolLevels.RawMiningSpeed = ((Game.ToolLevels.Picklevel / 5) + 1);
+	Game.ToolLevels.MiningSpeed = Math.round((Game.ToolLevels.PickLevel / 3) + 1);
 	Game.MasterMiner();
 	document.getElementById('save-code').innerHTML =  ("");
 	document.getElementById('load-code').innerHTML =  ("");
@@ -44,7 +43,7 @@ Game.Pick = function(){
 	*If it equals 1, get iron
 	*/
 	if(Math.floor(Math.random() * 6) + 1 == 1){
-		Game.Iron = Game.Iron + Math.round((1 * (Game.ToolLevels.PickLevel / 3) + 1));
+		Game.Iron = Game.Iron + Math.round((1 * (Game.ToolLevels.PickLevel / 6) + 1));
 		if(Achievement.Var.MinedIron != 1){
 			Achievement.Get.MinedIron(); 
 		}
@@ -61,12 +60,12 @@ Game.Axe = function(){
 	}
 	
 	if(Math.floor(Math.random() * 20) + 1 == 1){
-		Game.Leaves = Game.Leaves + Math.round((1 * (Game.ToolLevels.AxeLevel / 3) + 1));
+		Game.Leaves = Game.Leaves + Math.round((1 * (Game.ToolLevels.AxeLevel / 6) + 1));
 		if(Achievement.Var.ChoppedLeaves != 1){
 			Achievement.Get.ChoppedLeaves(); 
 		}
 	}else{
-		Game.Wood = Game.Wood + Math.round((1 * (Game.ToolLevels.PickLevel / 3) + 1));
+		Game.Wood = Game.Wood + Math.round((1 * (Game.ToolLevels.AxeLevel / 3) + 1));
 	}
 	Game.Update();
 }
@@ -76,7 +75,7 @@ Game.Dig = function(){
 		Achievement.Get.DugDirt(); 
 	}
 	if(Math.floor(Math.random() * 6) + 1 == 1){
-		Game.Sod = Game.Sod + Math.round((1 * (Game.ToolLevels.ShovelLevel / 3) + 1));
+		Game.Sod = Game.Sod + Math.round((1 * (Game.ToolLevels.ShovelLevel / 6) + 1));
 		if(Achievement.Var.DugSod != 1){
 			Achievement.Get.DugSod(); 
 		}
@@ -113,8 +112,7 @@ Game.AxeUpgrade = function(){
 Game.ShovelUpgrade = function(){
 		Game.Stone -= 50;
 		Game.Wood -= 10;
-		Game.ToolLevels.AxeLevel += 1;
-
+		Game.ToolLevels.ShovelLevel += 1;
 		Achievement.Get.Upgrading();
 		Game.Update();
 }

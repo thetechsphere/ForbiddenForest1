@@ -15,14 +15,13 @@ SaveGame.SaveAll = function(){
 	
 	//alert("Your Save Game Code: " + SaveGame.EncodeText + ", Write This Code down For Loading Use Later! :)");
 	document.getElementById('save-code').innerHTML =  ("<p>Save code, copy this and save it somewhere: " + SaveGame.EncodeText + "</p>");
-	
-	
+
 }
 
 LoadGame.LoadAll = function(){
-	
-	LoadGame.DecodeArray = atob(prompt("Save Code", "Enter Save Code To Load Game.")).split(" ");
 
+	LoadGame.DecodeArray = atob(prompt("Save Code", "Enter Save Code To Load Game.")).split(" ");
+	
 	Game.ToolLevels.ShovelLevel = parseInt(LoadGame.DecodeArray[0]) || 0;
 	Game.ToolLevels.AxeLevel = parseInt(LoadGame.DecodeArray[1]) || 0;
 	Game.ToolLevels.PickLevel = parseInt(LoadGame.DecodeArray[2]) || 0;
@@ -37,3 +36,4 @@ LoadGame.LoadAll = function(){
 	//alert("Game Save Successfully Loaded!");
 	document.getElementById('load-code').innerHTML =  ("<p>Game successfully loaded</p>");
 }
+
