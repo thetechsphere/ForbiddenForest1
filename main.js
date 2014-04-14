@@ -46,13 +46,13 @@ Main = {};
 			$("#PUpgrade").click(function(event) 
 			{
 				event.preventDefault();
-				if(Game.Stone >= Math.round(50 * (1.15 * Game.ToolLevels.PickLevel))&& Game.Wood >= Math.round(10 *(1.15 * Game.ToolLevels.PickLevel)))
+				if(Game.Stone >= Math.round(50 * (1 + .15 * Game.ToolLevels.PickLevel))&& Game.Wood >= Math.round(10 *(1 + .15 * Game.ToolLevels.PickLevel)))
 				{
 					Game.PickUpgrade();
 				}
 				else
 				{
-					alert(Math.round(50 * (1.15 * Game.ToolLevels.PickLevel)) + " Stone and "+ Math.round(10 *(1.15 * Game.ToolLevels.PickLevel)) + " Wood Required To Upgrade Pickaxe!");
+					alert(Math.round(50 * (1 + .15 * Game.ToolLevels.PickLevel)) + " Stone and "+ Math.round(10 *(1 + .15 * Game.ToolLevels.PickLevel)) + " Wood Required To Upgrade Pickaxe!");
 				}
 			});
 		}
@@ -64,13 +64,13 @@ Main = {};
 			$("#AUpgrade").click(function(event) 
 			{
 				event.preventDefault();
-				if(Game.Stone >= Math.round(50 * (1.15 * Game.ToolLevels.AxeLevel))&& Game.Wood >= Math.round(10 *(1.15 * Game.ToolLevels.AxeLevel)))
+				if(Game.Stone >= Math.round(50 * (1 + .15 * Game.ToolLevels.AxeLevel))&& Game.Wood >= Math.round(10 *(1 + .15 * Game.ToolLevels.AxeLevel)))
 				{
 					Game.AxeUpgrade();
 				}
 				else
 				{
-					alert(Math.round(50 * (1.15 * Game.ToolLevels.AxeLevel)) + " Stone and "+ Math.round(10 *(1.15 * Game.ToolLevels.AxeLevel)) + " Wood Required To Upgrade Axe!");
+					alert(Math.round(50 * (1 + .15 * Game.ToolLevels.AxeLevel)) + " Stone and "+ Math.round(10 *(1 + .15 * Game.ToolLevels.AxeLevel)) + " Wood Required To Upgrade Axe!");
 				}
 			});
 		}
@@ -82,13 +82,13 @@ Main = {};
 			$("#SUpgrade").click(function(event) 
 			{
 				event.preventDefault();
-				if(Game.Stone >= Math.round(50 * (1.15 * Game.ToolLevels.ShovelLevel))&& Game.Wood >= Math.round(10 *(1.15 * Game.ToolLevels.ShovelLevel)))
+				if(Game.Stone >= Math.round(50 * (1 + .15 * Game.ToolLevels.ShovelLevel))&& Game.Wood >= Math.round(10 *(1 + .15 * Game.ToolLevels.ShovelLevel)))
 				{
 					Game.ShovelUpgrade();
 				}
 				else
 				{
-					alert(Math.round(50 * (1.15 * Game.ToolLevels.ShovelLevel)) + " Stone and "+ Math.round(10 *(1.15 * Game.ToolLevels.ShovelLevel)) + " Wood Required To Upgrade Shovel!");
+					alert(Math.round(50 * (1 + .15 * Game.ToolLevels.ShovelLevel)) + " Stone and "+ Math.round(10 *(1 + .15 * Game.ToolLevels.ShovelLevel)) + " Wood Required To Upgrade Shovel!");
 				}
 			});
 		}
