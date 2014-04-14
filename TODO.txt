@@ -12,6 +12,8 @@
       ##          #########    ########        #########
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 PLEASE ADD TO THIS LIST WHERE YOU SEE FIT!
+THERE IS NO GENERAL ORDER. IF YOU FINISH ONE PUT IT UNDER THE LAST COMPLETED ONE
+AND MOVE THE NUMBER BELONGING TO IT AS WELL.
 WHEN A TASK HAS BEEN COMPLETED MARK THE FIRST LETTER OF THE TASK WITH TWO(2) HASHTAGS!
 Example:
 Uncompleted Task: Fix up rendering engine
@@ -27,15 +29,21 @@ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 TODO's in main.js:
   
   1. ## Change probability of getting leaves to a lower chance.
-  2. ## Save And Load Game 
-  3.
-  4.
-  5.
-  6.
-  7.
-  8.
-  9.
-  10.
-  11.
-  12.
-  13.
+  2. ## Save And Load Game.
+  3. Have Cookies(Or Sessions) Save The Game Every 5 Minuts For Auto Load On Reload.
+  4. Include Auto Resource Gathering mechanisms
+  5. Improve Upgrade Button Graphics
+  6. Make A Mobile Version.
+  7. Make Customizable Backgrounds (Upload-able using URL)
+  8. Add a Story Behind The Madness
+  9. Include a Link to a suggestion box
+  10. add a few animations (mining Digging Chopping)
+  11. Add Uses for materials and add new discoverable ones
+  12. make a money system, maybe a trade market of some sort
+  13. Add A quest system to the game. make there be a reason for gathering minerals and materials.
+  14. add a incrementing price for the tool upgrades. make them worth more.
+  15. Make a Better UI.
+  16. Make The Link To This and other items Public.
+  17. Add the ability to farm
+  18. Add the ability to hunt animals with random amounts of success.
+  19. Base Most of The Things on Skill, and Workmanship.

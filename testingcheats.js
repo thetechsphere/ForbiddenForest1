@@ -9,7 +9,7 @@ TestingCheats.AcheveAll = function(password)
 		Achievement.Get.CheaterCheater(); 
 	}
 	for(var i in Achievement.Var){
-    	Achievement.Var[i] = 1;
+		Achievement.Var[i] = 1;
 		}
 	}
 }
