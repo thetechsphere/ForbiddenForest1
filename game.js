@@ -20,6 +20,12 @@ Game.Leaves = 0;
 *}
 */
 
+Game.TestFor = function(){
+	if(Game.ToolLevels.PickLevel >= 100 && Achievement.Var.MasterUpgrader != 1){ Achievement.Get.MasterUpgrader(); }
+	if(Game.ToolLevels.AxeLevel >= 100 && Achievement.Var.MasterUpgrader != 1){ Achievement.Get.MasterUpgrader(); }
+	if(Game.ToolLevels.ShovelLevel >= 100 && Achievement.Var.MasterUpgrader != 1){ Achievement.Get.MasterUpgrader(); }
+}
+
 Game.Update = function(){
 	document.getElementById('Stone').innerHTML =  ("Stone: " + Game.Stone);
 	document.getElementById('Iron').innerHTML =  ("Iron: " + Game.Iron);
@@ -32,6 +38,8 @@ Game.Update = function(){
 	Game.MasterMiner();
 	document.getElementById('save-code').innerHTML =  ("");
 	document.getElementById('load-code').innerHTML =  ("");
+	
+	Game.TestFor();
 }
 
 Game.Pick = function(){
@@ -97,7 +105,7 @@ Game.PickUpgrade = function(){
 		Game.Stone -= 50;
 		Game.Wood -= 10;
 		Game.ToolLevels.PickLevel += 1;
-		Achievement.Get.Upgrading();
+		if(Achievement.Var.Upgrading != 1){ Achievement.Get.Upgrading(); }
 		Game.Update();
 }
 
@@ -105,7 +113,7 @@ Game.AxeUpgrade = function(){
 		Game.Stone -= 50;
 		Game.Wood -= 10;
 		Game.ToolLevels.AxeLevel += 1;
-		Achievement.Get.Upgrading();
+		if(Achievement.Var.Upgrading != 1){ Achievement.Get.Upgrading(); }
 		Game.Update();
 }
 
@@ -113,6 +121,6 @@ Game.ShovelUpgrade = function(){
 		Game.Stone -= 50;
 		Game.Wood -= 10;
 		Game.ToolLevels.ShovelLevel += 1;
-		Achievement.Get.Upgrading();
+		if(Achievement.Var.Upgrading != 1){ Achievement.Get.Upgrading(); }
 		Game.Update();
 }

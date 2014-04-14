@@ -20,6 +20,7 @@ Achievement.Var.PunchedAPig = 0;
 Achievement.Var.CheaterCheater = 0;
 Achievement.Var.MinedStone = 0;
 Achievement.Var.MasterMiner = 0;
+Achievement.Var.MasterUpgrader = 0;
 Achievement.Var.Upgrading = 0;
 
 /*Achievement.Alert = function(text){ 
@@ -87,3 +88,7 @@ Achievement.Get.Upgrading = function(){
 	Achievement.Var.Upgrading = 1;
 }
 
+Achievement.Get.MasterUpgrader = function(){
+	Achievement.Alert("Master Upgrader! Upgrade Something 100 Times!");
+	Achievement.Var.MasterUpgrader = 1;
+}
