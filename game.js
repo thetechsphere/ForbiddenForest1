@@ -102,24 +102,24 @@ Game.MasterMiner = function(){
 }
 
 Game.PickUpgrade = function(){
-		Game.Stone -= 50;
-		Game.Wood -= 10;
+		Game.Stone -= Math.round(50 * (1.15 * Game.ToolLevels.PickLevel));
+		Game.Wood -= Math.round(10 * (1.15 * Game.ToolLevels.PickLevel));
 		Game.ToolLevels.PickLevel += 1;
 		if(Achievement.Var.Upgrading != 1){ Achievement.Get.Upgrading(); }
 		Game.Update();
 }
 
 Game.AxeUpgrade = function(){
-		Game.Stone -= 50;
-		Game.Wood -= 10;
+		Game.Stone -= Math.round(50 * (1.15 * Game.ToolLevels.AxeLevel));
+		Game.Wood -= Math.round(10 * (1.15 * Game.ToolLevels.AxeLevel));
 		Game.ToolLevels.AxeLevel += 1;
 		if(Achievement.Var.Upgrading != 1){ Achievement.Get.Upgrading(); }
 		Game.Update();
 }
 
 Game.ShovelUpgrade = function(){
-		Game.Stone -= 50;
-		Game.Wood -= 10;
+		Game.Stone -= Math.round(50 * (1.15 * Game.ToolLevels.ShovelLevel));
+		Game.Wood -= Math.round(10 * (1.15 * Game.ToolLevels.ShovelLevel));
 		Game.ToolLevels.ShovelLevel += 1;
 		if(Achievement.Var.Upgrading != 1){ Achievement.Get.Upgrading(); }
 		Game.Update();
