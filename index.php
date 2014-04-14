@@ -24,11 +24,10 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <div id="StatusBar"></div>
 <div id="save-code"></div>
 <div id="load-code"></div>
-<br>
-
+<hr>
 <table style="text-align: center; margin: auto;" width="75%">
 <tr>
-<td>
+<td width="25%">
 <div id="menu">
 <a id="Pick"><img src="Images/Pick-Normal.png"></a><br>
 <a id="Axe"><img src="Images/Axe-Normal.png"></a><br>
@@ -43,14 +42,18 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <span id="Dirt">Dirt: 0 </span><br>
 <span id="Sod">Sod: 0 </span><br>
 </td>
-<td>
+<td width="25%">
 <div id="menu">
-<a id="PUpgrade"><img src="Images/Pick-upgrade.png"></a><br>
-<a id="AUpgrade"><img src="Images/Axe-upgrade.png"></a><br>
-<a id="SUpgrade"><img src="Images/Shovel-upgrade.png"></a><br>
+<a id="PUpgrade"><img src="Images/PICKStatus.png"></a><br>
+<a id="AUpgrade"><img src="Images/AxeStatus.png"></a><br>
+<a id="SUpgrade"><img src="Images/ShovelStatus.png"></a><br>
 </div>
 </td>
 </tr>
+</table>
+<hr>
+
+
 <script type="text/javascript" src="save-game.js"></script>
 <script type="text/javascript" src="Jquerry.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
