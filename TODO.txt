@@ -30,9 +30,10 @@ TODO's in main.js:
   - ## Change probability of getting leaves to a lower chance.
   - ## Save And Load Game.
   - ## Make The Link To This and other items Public.
+  - ## Improve Upgrade Button Graphics
+  - ## Improve Upgrade Items Logics
   - Have Cookies(Or Sessions) Save The Game Every 5 Minuts For Auto Load On Reload.
   - Include Auto Resource Gathering mechanisms
-  - Improve Upgrade Button Graphics
   - Make A Mobile Version.
   - Make Customizable Backgrounds (Upload-able using URL)
   - Add a Story Behind The Madness
