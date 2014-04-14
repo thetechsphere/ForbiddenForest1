@@ -15,7 +15,7 @@ Game.Leaves = 0;
 
 /*
 *Probabiility function is completed as thus:
-*if(Math.floor(Math.random() * rangeOfRandom == 1){
+*if((Math.floor(Math.random() * rangeOfRandom) + 1 == 1){
 *	completedGiveFunction;
 *}
 */
