@@ -51,12 +51,12 @@ Game.Pick = function(){
 	*If it equals 1, get iron
 	*/
 	if(Math.floor(Math.random() * 6) + 1 == 1){
-		Game.Iron = Game.Iron + Math.round((1 * (Game.ToolLevels.PickLevel / 6) + 1));
+		Game.Iron = Game.Iron + Math.round((1 * (Game.ToolLevels.PickLevel / 4) + 1));
 		if(Achievement.Var.MinedIron != 1){
 			Achievement.Get.MinedIron(); 
 		}
 	} else{
-		Game.Stone = Game.Stone + Math.round((1 * (Game.ToolLevels.PickLevel / 3) + 1));
+		Game.Stone = Game.Stone + Math.round((1 * (Game.ToolLevels.PickLevel / 2) + 1));
 	}
 	Game.Update();
 
@@ -68,12 +68,12 @@ Game.Axe = function(){
 	}
 	
 	if(Math.floor(Math.random() * 20) + 1 == 1){
-		Game.Leaves = Game.Leaves + Math.round((1 * (Game.ToolLevels.AxeLevel / 6) + 1));
+		Game.Leaves = Game.Leaves + Math.round((1 * (Game.ToolLevels.AxeLevel / 4) + 1));
 		if(Achievement.Var.ChoppedLeaves != 1){
 			Achievement.Get.ChoppedLeaves(); 
 		}
 	}else{
-		Game.Wood = Game.Wood + Math.round((1 * (Game.ToolLevels.AxeLevel / 3) + 1));
+		Game.Wood = Game.Wood + Math.round((1 * (Game.ToolLevels.AxeLevel / 2) + 1));
 	}
 	Game.Update();
 }
@@ -83,12 +83,12 @@ Game.Dig = function(){
 		Achievement.Get.DugDirt(); 
 	}
 	if(Math.floor(Math.random() * 6) + 1 == 1){
-		Game.Sod = Game.Sod + Math.round((1 * (Game.ToolLevels.ShovelLevel / 6) + 1));
+		Game.Sod = Game.Sod + Math.round((1 * (Game.ToolLevels.ShovelLevel / 4) + 1));
 		if(Achievement.Var.DugSod != 1){
 			Achievement.Get.DugSod(); 
 		}
 	}else{
-		Game.Dirt = Game.Dirt + Math.round((1 * (Game.ToolLevels.ShovelLevel / 3) + 1));
+		Game.Dirt = Game.Dirt + Math.round((1 * (Game.ToolLevels.ShovelLevel / 2) + 1));
 	}
 	Game.Update();
 }

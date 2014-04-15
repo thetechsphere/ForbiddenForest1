@@ -32,6 +32,7 @@ TODO's in main.js:
   - ## Make The Link To This and other items Public.
   - ## Improve Upgrade Button Graphics
   - ## Improve Upgrade Items Logics
+  - ## Add a incrementing price for the tool upgrades. make them worth more.
   - Have Cookies(Or Sessions) Save The Game Every 5 Minuts For Auto Load On Reload.
   - Include Auto Resource Gathering mechanisms
   - Make A Mobile Version.
@@ -42,7 +43,6 @@ TODO's in main.js:
   - Add Uses for materials and add new discoverable ones
   - make a money system, maybe a trade market of some sort
   - Add A quest system to the game. make there be a reason for gathering minerals and materials.
-  - add a incrementing price for the tool upgrades. make them worth more.
   - Make a Better UI.
   - Add the ability to farm
   - Add the ability to hunt animals with random amounts of success.

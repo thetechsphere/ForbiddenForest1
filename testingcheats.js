@@ -29,9 +29,6 @@ TestingCheats.HaxRFun = function(password)
 		Game.Wood = 1000;
 		Game.Leaves = 1000;
 		Game.Update();
-		if(Achievement.Var.CheaterCheater != 1){
-		Achievement.Get.CheaterCheater(); 
-		}
 		for(var i in Achievement.Var){
 			Achievement.Var[i] = 1;
 		}

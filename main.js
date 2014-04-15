@@ -1,15 +1,16 @@
 Main = {};
 //Instantiate main game function
+
 	$(
-	function(){
-	//Pickaxe waits for click here. Calls event.
-	$("#Pick").click(function(event) {
-		event.preventDefault();
-	if(true){
-		Game.Pick();
-			}
-		});
-}
+		function(){
+		//Pickaxe waits for click here. Calls event.
+		$("#Pick").click(function(event) {
+			event.preventDefault();
+		if(true){
+			Game.Pick();
+				}
+			});
+	}
 );
 	
 	$(
