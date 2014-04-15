@@ -41,6 +41,10 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <span id="Leaves">Leaves: 0 </span><br>
 <span id="Dirt">Dirt: 0 </span><br>
 <span id="Sod">Sod: 0 </span><br>
+<span id="Bukkit"></span><br>
+<span id="Water"></span><br>
+<span id="Mud"></span><br>
+<span id="Bricks"></span><br>
 </td>
 <td width="25%">
 <div id="menu">
@@ -52,40 +56,6 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 </tr>
 </table>
 <hr>
-<h2 style="text-align: center;"><b>Other Items (Hover To See Cost)</b><h2>
-<table width="100%">
-<tr>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-</tr>
-
-<tr>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-</tr>
-
-<tr>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-<td><a id="PUpgrade"><img src="Images/PICKStatus.png"></a></td>
-</tr>
-
-
-</table>
 
 <script type="text/javascript" src="save-game.js"></script>
 <script type="text/javascript" src="Jquerry.min.js"></script>
