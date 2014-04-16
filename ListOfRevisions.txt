@@ -1,0 +1,17 @@
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+THIS FILE IS FOR PUBLIC NOTICE, IF THERE IS A VERSION UPDATE PLEASE INCLUDE A LIST OF THE RIVISIONS COMPLEATED SINCE THE
+LAST UPDATE.
+
+Example :
+
+V 0.0.20 -
+ ~ Increased Item Prices
+ ~ Added more Items
+ ~ Added Quests
+ ~ Fixed Bugs:
+    ~ Fixed Display Bug #2246648
+    ~ Fixed Moble Bug # #446586
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+List Of Revisions (Most Recient To Less Recient):
