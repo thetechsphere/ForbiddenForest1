@@ -67,7 +67,7 @@ Game.Axe = function(){
 		Achievement.Get.ChoppedTree(); 
 	}
 	
-	if(Math.floor(Math.random() * 20) + 1 == 1){
+	if(Math.floor(Math.random() * 25) + 1 == 1){
 		Game.Leaves = Game.Leaves + Math.round((1 * (Game.ToolLevels.AxeLevel / 4) + 1));
 		if(Achievement.Var.ChoppedLeaves != 1){
 			Achievement.Get.ChoppedLeaves(); 
