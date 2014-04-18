@@ -9,7 +9,8 @@ TestingCheats.Alert = function(text){
 
 TestingCheats.AcheveAll = function(password){
 	if(password != "chessmenink"){ 
-		alert("Password Incorrect!\nNo hax0r for you!"); 
+		alert("Oh man, you blew it. Now this window is gonna close and you are gonna lose all your stuff. Bye bye!");
+		close();
 	}else{
 	if(Achievement.Var.CheaterCheater != 1){
 		Achievement.Get.CheaterCheater(); 
@@ -22,7 +23,8 @@ TestingCheats.AcheveAll = function(password){
 
 TestingCheats.HaxRFun = function(password){
 	if(password != "chessmenink"){ 
-			alert("Password Incorrect!\nNo hax0r for you!"); 
+			alert("Oh man, you blew it. Now this window is gonna close and you are gonna lose all your stuff. Bye bye!");
+			close();
 		}else{
 		Game.ToolLevels.PickLevel = 1000;
 		Game.ToolLevels.AxeLevel = 1000;
