@@ -1,26 +1,54 @@
-<!DOCTYPE html>
-
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/ico" href="Images/favicon.ico">
-	<title>
-		Epic World
-	</title>
+<title>Splash Dot - Home</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="author" content="Corbin Matschull, Daniel Jajliardo">
+<meta name="keywords" content="Art,Code,Team">
+<meta name="robots" content="index, nofollow">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="images/FaviCon.png">
+<link rel="stylesheet" type="text/css" href="screen.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/ico" href="Images/favicon.ico">
+<script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/js/page_context.js"></script>
 </head>
-
 <body>
-
-<div class="titlebar">
-Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://www.chessmenink.tk/" target="_blank">ChessmenInk</a>.
+<header role="banner" class="clearfix main-header">
+  <div class="wrapper clearfix">
+  <a href="index.php" class="logo">
+  <div class="title-text">Welcome to-<b><i><br>~ Flash Mine ~</i></b>.</div>
+  </a>
+  <nav role="navigation" class="main-nav clearfix">
+	<ul class="clearfix">
+	<li class="hosting-page">
+	<a href="https://www.chessmenink.tk/" target="_blank" title="Chessmen Ink">Hosted By</a>
+	</li>
+	<li>
+		<a href="twitter.php">Twitter Feeds</a>
+	</li>
+	<li class="white-button">
+		<a class="button" id="SaveGame">Save This Game</a>
+	</li>
+	<li class="white-button">
+		<a class="button" id="LoadGame">Load A Game</a>
+	</li>
+		</ul>
+	</nav>
+</header>
+<div class="titlebar">Hosted On: <a href="https://www.chessmenink.tk/" target="_blank">ChessmenInk</a>.
  Written And Scripted By: <a href="mailto:danieljajliardo@gmail.com">Daniel Jajliardo</a>, and <a href="mailto:thinedarksoldier@gmail.com">Corbin M.</a><b>V 0.1.02</b>
 <a type="button" href="https://github.com/Chessmenink/ForbiddenForest1" target="_blank" id="Link">Github</a>
 <a type="button" href="Readme.md" target="_Blank" id="Link">Readme-File</a>
 <a type="button" href="TODO.txt" target="_Blank" id="Link">ToDo-File</a>
-<button type="button" id="SaveGame">Save This Game</button>
-<button type="button" id="LoadGame">Load A Game</button>
 </div>
-
+<div class="content-wrapper pushed-down">
+	<div class="wrapper clearfix profile">
+			
+		
 <div id="StatusBar"></div>
 <div id="save-code"></div>
 <div id="load-code"></div>
@@ -57,7 +85,8 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 </tr>
 </table>
 <hr>
-
+	</div>
+</div>
 <script type="text/javascript" src="save-game.js"></script>
 <script type="text/javascript" src="Jquerry.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
