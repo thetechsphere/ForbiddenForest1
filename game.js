@@ -38,7 +38,6 @@ Game.Update = function(){
 	Game.MasterMiner();
 	document.getElementById('save-code').innerHTML =  ("");
 	document.getElementById('load-code').innerHTML =  ("");
-	document.getElementById('lucky-popup').innerHTML = ("");
 	
 	Game.TestFor();
 };

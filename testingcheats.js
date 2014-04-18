@@ -2,7 +2,7 @@ TestingCheats = {};
 
 TestingCheats.Alert = function(text){
 	TestingCheats.TEXT = text;
-	document.getElementById('lucky-popup').innerHTML = (TestingCheats.TEXT + "<p>Man are you lucky you didn\n't type the wrong password!</p>");
+	document.getElementById('StatusBar').innerHTML = (TestingCheats.TEXT + "<p>Man are you lucky you didn\n't type the wrong password!</p>");
 };
 
 
