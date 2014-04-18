@@ -44,6 +44,7 @@ TestingCheats.HaxRFun = function(password){
 
 TestingCheats.AwesomeCheat = function(password){
 	if(password != "chessmenink"){
+		alert("Oh man, you blew it. Now this window is gonna close and you are gonna lose all your stuff. Bye bye!");
 		close();
 	}else{
 		TestingCheats.Alert("Oh you\n're lucky!");
