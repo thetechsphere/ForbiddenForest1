@@ -13,7 +13,7 @@
 
 <div class="titlebar">
 Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://www.chessmenink.tk/" target="_blank">ChessmenInk</a>.
- Written And Scripted By: <a href="mailto:danieljajliardo@gmail.com">Daniel Jajliardo</a>, and Corbin M. 			<b>V 0.1.02</b>
+ Written And Scripted By: <a href="mailto:danieljajliardo@gmail.com">Daniel Jajliardo</a>, and <a href="mailto:thinedarksoldier@gmail.com">Corbin M.</a><b>V 0.1.02</b>
 <a type="button" href="https://github.com/Chessmenink/ForbiddenForest1" target="_blank" id="Link">Github</a>
 <a type="button" href="Readme.md" target="_Blank" id="Link">Readme-File</a>
 <a type="button" href="TODO.txt" target="_Blank" id="Link">ToDo-File</a>
@@ -21,9 +21,10 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <button type="button" id="LoadGame">Load A Game</button>
 </div>
 
-<div id="StatusBar"><br></div>
+<div id="StatusBar"></div>
 <div id="save-code"></div>
 <div id="load-code"></div>
+<div id="lucky-popup"></div>
 <hr>
 <table style="text-align: center; margin: auto;" width="75%">
 <tr>
@@ -49,8 +50,8 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <td width="25%">
 <div id="menu">
 <a id="PUpgrade"><img src="Images/PICKStatus.png"></a><br>
-<a id="SUpgrade"><img src="Images/ShovelStatus.png"></a><a id="AUpgrade"><img src="Images/AxeStatus.png"></a><br>
-<br>
+<a id="AUpgrade"><img src="Images/AxeStatus.png"></a><br>
+<a id="SUpgrade"><img src="Images/ShovelStatus.png"></a><br>
 </div>
 </td>
 </tr>
@@ -63,6 +64,5 @@ Epic World <b><i>~ The Forbidden Forest ~</i></b>. Hosted On: <a href="https://w
 <script type="text/javascript" src="game.js"></script>
 <script type="text/javascript" src="achevements.js"></script>
 <script type="text/javascript" src="testingcheats.js"></script>
-<script type="text/javascript" src="quests.js"></script>
 </body>	
 </html>
