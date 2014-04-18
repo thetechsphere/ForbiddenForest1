@@ -27,6 +27,15 @@ Game.TestFor = function(){
 };
 
 Game.Update = function(){
+
+	if(Achievement.Time >= 10){
+		document.getElementById('StatusBar').innerHTML =  ("<br> ");
+		document.getElementById('save-code').innerHTML =  ("");
+		document.getElementById('load-code').innerHTML =  ("");
+	}else{
+		Achievement.Time+=1;
+	}
+	
 	document.getElementById('Stone').innerHTML =  ("Stone: " + Game.Stone);
 	document.getElementById('Iron').innerHTML =  ("Iron: " + Game.Iron);
 	document.getElementById('Dirt').innerHTML =  ("Dirt: " + Game.Dirt);
@@ -36,8 +45,6 @@ Game.Update = function(){
 	
 	Game.ToolLevels.MiningSpeed = Math.round((Game.ToolLevels.PickLevel / 3) + 1);
 	Game.MasterMiner();
-	document.getElementById('save-code').innerHTML =  ("");
-	document.getElementById('load-code').innerHTML =  ("");
 	
 	Game.TestFor();
 };
@@ -97,7 +104,9 @@ Game.Dig = function(){
 Game.MasterMiner = function(){
 	if(Achievement.Var.MinedStone >= 1 && Achievement.Var.MinedIron >= 1 && Achievement.Var.ChopTree >= 1 && 
 		Achievement.Var.ChoppedLeaves >= 1 && Achievement.Var.DugDirt >= 1 && Achievement.Var.DugSod >= 1){
+		if(Achievement.Var.MasterMiner != 1 && Achievement.Time >= 2){
 			Achievement.Get.MasterMiner();
+		}
 	}
 };
 

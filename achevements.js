@@ -10,6 +10,8 @@ Achievement.Get = {};
 *And then Achievement is the main superclass for this whole file.
 */
 
+Achievement.Time = 0;
+
 Achievement.Var.MinedStone = 0;
 Achievement.Var.MinedIron = 0;
 Achievement.Var.DugDirt = 0;
@@ -32,6 +34,7 @@ Old Alert System
 Achievement.Alert = function(text){ 
 	Achievement.TEXT = text;
 	document.getElementById('StatusBar').innerHTML =  ("<p>Achievement Get: " + Achievement.TEXT + "</p>");
+	Achievement.Time = 0;
 };
 
 Achievement.Get.MinedStone = function(){
