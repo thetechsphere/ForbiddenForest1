@@ -1,7 +1,13 @@
 TestingCheats = {};
 
-TestingCheats.AcheveAll = function(password)
-{
+TestingCheats.Alert = function(text){
+	TestingCheats.TEXT = text;
+	document.getElementById('lucky-popup').innerHTML = (TestingCheats.TEXT + "<p>Man are you lucky you didn\n't type the wrong password!</p>");
+};
+
+
+
+TestingCheats.AcheveAll = function(password){
 	if(password != "chessmenink"){ 
 		alert("Password Incorrect!\nNo hax0r for you!"); 
 	}else{
@@ -12,10 +18,9 @@ TestingCheats.AcheveAll = function(password)
 		Achievement.Var[i] = 1;
 		}
 	}
-}
+};
 
-TestingCheats.HaxRFun = function(password)
-{
+TestingCheats.HaxRFun = function(password){
 	if(password != "chessmenink"){ 
 			alert("Password Incorrect!\nNo hax0r for you!"); 
 		}else{
@@ -34,5 +39,14 @@ TestingCheats.HaxRFun = function(password)
 		}
 		Game.Update();
 		Achievement.Get.CheaterCheater();
+	};
+};
+
+TestingCheats.AwesomeCheat = function(password){
+	if(password != "chessmenink"){
+		close();
+	}else{
+		TestingCheats.Alert("Oh you\n're lucky!");
 	}
-}
+	
+};
