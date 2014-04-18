@@ -1,118 +1,92 @@
 Main = {};
 //Instantiate main game function
 
-	$(
-		function(){
+	$(function(){
 		//Pickaxe waits for click here. Calls event.
 		$("#Pick").click(function(event) {
 			event.preventDefault();
 		if(true){
 			Game.Pick();
-				}
-			});
+			}
+		});
 	}
 );
 	
-	$(
-		function(){
+	$(function(){
 			//Wood Axe waits for click here. Calls Event
-			$("#Axe").click(function(event) 
-			{
+			$("#Axe").click(function(event) {
 				event.preventDefault();
-				if(true)
-				{
+				if(true){
 					Game.Axe();
-				}
-			});
-		}
-	);
+			}
+		});
+	}
+);
 	
-	$(
-		function(){
+	$(function(){
 			//Shovel waits for click here. Calls Event
-			$("#Shovel").click(function(event) 
-			{
+			$("#Shovel").click(function(event) {
 				event.preventDefault();
-				if(true)
-				{
+				if(true){
 					Game.Dig();
-				}
-			});
-		}
-	);
+			}
+		});
+	}
+);
 	
-	$(
-		function(){
+	$(function(){
 			//This is a part upgrade, waits for the click, calls event.
-			$("#PUpgrade").click(function(event) 
-			{
+			$("#PUpgrade").click(function(event){
 				event.preventDefault();
-				if(Game.Stone >= Math.round(50 * (1 + .15 * Game.ToolLevels.PickLevel))&& Game.Wood >= Math.round(10 *(1 + .15 * Game.ToolLevels.PickLevel)))
-				{
+				if(Game.Stone >= Math.round(50 * (1 + .15 * Game.ToolLevels.PickLevel))&& Game.Wood >= Math.round(10 *(1 + .15 * Game.ToolLevels.PickLevel))){
 					Game.PickUpgrade();
-				}
-				else
-				{
+				}else{
 					alert(Math.round(50 * (1 + .15 * Game.ToolLevels.PickLevel)) + " Stone and "+ Math.round(10 *(1 + .15 * Game.ToolLevels.PickLevel)) + " Wood Required To Upgrade Pickaxe!");
-				}
-			});
-		}
-	);
+			}
+		});
+	}
+);
 	
-		$(
-		function(){
+		$(function(){
 			//This is a part upgrade, waits for the click, calls event.
-			$("#AUpgrade").click(function(event) 
-			{
+			$("#AUpgrade").click(function(event){
 				event.preventDefault();
-				if(Game.Stone >= Math.round(50 * (1 + .15 * Game.ToolLevels.AxeLevel))&& Game.Wood >= Math.round(10 *(1 + .15 * Game.ToolLevels.AxeLevel)))
-				{
+				if(Game.Stone >= Math.round(50 * (1 + .15 * Game.ToolLevels.AxeLevel))&& Game.Wood >= Math.round(10 *(1 + .15 * Game.ToolLevels.AxeLevel))){
 					Game.AxeUpgrade();
-				}
-				else
-				{
+				}else{
 					alert(Math.round(50 * (1 + .15 * Game.ToolLevels.AxeLevel)) + " Stone and "+ Math.round(10 *(1 + .15 * Game.ToolLevels.AxeLevel)) + " Wood Required To Upgrade Axe!");
-				}
-			});
-		}
-	);
+			}
+		});
+	}
+);
 	
-		$(
-		function(){
+		$(function(){
 			//This is a part upgrade, waits for the click, calls event.
-			$("#SUpgrade").click(function(event) 
-			{
+			$("#SUpgrade").click(function(event) {
 				event.preventDefault();
-				if(Game.Stone >= Math.round(50 * (1 + .15 * Game.ToolLevels.ShovelLevel))&& Game.Wood >= Math.round(10 *(1 + .15 * Game.ToolLevels.ShovelLevel)))
-				{
+				if(Game.Stone >= Math.round(50 * (1 + .15 * Game.ToolLevels.ShovelLevel))&& Game.Wood >= Math.round(10 *(1 + .15 * Game.ToolLevels.ShovelLevel))){
 					Game.ShovelUpgrade();
-				}
-				else
-				{
+				}else{
 					alert(Math.round(50 * (1 + .15 * Game.ToolLevels.ShovelLevel)) + " Stone and "+ Math.round(10 *(1 + .15 * Game.ToolLevels.ShovelLevel)) + " Wood Required To Upgrade Shovel!");
-				}
-			});
-		}
-	);
+			}
+		});
+	}
+);
 	
-		$(
-		function(){
+		$(function(){
 			//This Is For Saving The Game
-			$("#SaveGame").click(function(event) 
-			{
+			$("#SaveGame").click(function(event){
 				event.preventDefault();
 				SaveGame.SaveAll();
-			});
-		}
-	);
+		});
+	}
+);
 	
-	$(
-		function(){
+	$(function(){
 			//This Is For Laoding The Game
-			$("#LoadGame").click(function(event) 
-			{
+			$("#LoadGame").click(function(event) {
 				event.preventDefault();
 				LoadGame.LoadAll();
-			});
-		}
-	);
+		});
+	}
+);
