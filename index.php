@@ -23,7 +23,7 @@
   <div class="title-text">Welcome to-<b><i><br>~ Flash Mine ~</i></b>.</div>
   </a>
   <nav role="navigation" class="main-nav clearfix">
-	<ul class="clearfix">
+	<ul class="clearfix" style=" height: 0px; margin-top: auto; margin-bottom: auto;">
 	<li class="hosting-page">
 	<a href="https://www.chessmenink.tk/" target="_blank" title="Chessmen Ink">Hosted By</a>
 	</li>
