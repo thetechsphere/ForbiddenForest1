@@ -41,57 +41,68 @@ Achievement.Get.MinedStone = function(){
 
 	Achievement.Alert("Mined Stone");
 	Achievement.Var.MinedStone = 1;
+	Quest.Current++;
 };
 
 Achievement.Get.MinedIron = function(){
 
 	Achievement.Alert("Mined Iron");
 	Achievement.Var.MinedIron = 1;
+	Quest.Current++;
 };
 
 Achievement.Get.DugDirt = function(){
 	Achievement.Alert("Dug Dirt");
 	Achievement.Var.DugDirt = 1;
+	Quest.Current++;
 };
 
 Achievement.Get.DugSod = function(){
 
 	Achievement.Alert("Dug Sod");
 	Achievement.Var.DugSod = 1;
+	Quest.Current++;
 };
 
 Achievement.Get.ChoppedTree = function(){
 	Achievement.Alert("Chopped A Tree");
 	Achievement.Var.ChopTree = 1;
+	Quest.Current++;
 };
 
 Achievement.Get.ChoppedLeaves = function(){
 
 	Achievement.Alert("Chopped Leaves");
 	Achievement.Var.ChoppedLeaves = 1;
+	Quest.Current++;
 };
 
 Achievement.Get.PunchedAPig = function(){
 	Achievement.Alert("OMG! Pig Killer!");
 	Achievement.Var.PunchedAPig = 1;
+	Quest.Current++;
 };
 
 Achievement.Get.CheaterCheater = function(){
 	Achievement.Alert("Master Cheater, Epic!");
 	Achievement.Var.CheaterCheater = 1;
+	Quest.Current++;
 };
 
 Achievement.Get.MasterMiner = function(){
 	Achievement.Alert("You are now the master miner!\nGo forth and claim your land!");
 	Achievement.Var.MasterMiner = 1;
+	Quest.Current++;
 };
 
 Achievement.Get.Upgrading = function(){
 	Achievement.Alert("You Upgraded Something! Good Job!");
 	Achievement.Var.Upgrading = 1;
+	Quest.Current++;
 };
 
 Achievement.Get.MasterUpgrader = function(){
 	Achievement.Alert("Master Upgrader! Upgrade Something 100 Times!");
 	Achievement.Var.MasterUpgrader = 1;
+	Quest.Current++;
 };

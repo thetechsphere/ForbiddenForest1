@@ -31,6 +31,9 @@
 		<a href="twitter.php">Twitter Feeds</a>
 	</li>
 	<li class="white-button">
+		<a class="button" id="Quests">Current Quest</a>
+	</li>
+	<li class="white-button">
 		<a class="button" id="SaveGame">Save This Game</a>
 	</li>
 	<li class="white-button">
@@ -39,19 +42,13 @@
 		</ul>
 	</nav>
 </header>
-<div class="titlebar">Hosted On: <a href="https://www.chessmenink.tk/" target="_blank">ChessmenInk</a>.
- Written And Scripted By: <a href="mailto:danieljajliardo@gmail.com">Daniel Jajliardo</a>, and <a href="mailto:thinedarksoldier@gmail.com">Corbin M.</a><b>V 0.1.02</b>
-<a type="button" href="https://github.com/Chessmenink/ForbiddenForest1" target="_blank" id="Link">Github</a>
-<a type="button" href="Readme.md" target="_Blank" id="Link">Readme-File</a>
-<a type="button" href="TODO.txt" target="_Blank" id="Link">ToDo-File</a>
-</div>
-<div class="content-wrapper pushed-down">
+
+<div class="content-wrapper pushed-down"  style="margin-top: 0px; top: 20px;">
 	<div class="wrapper clearfix profile">
 			
 		
 <div id="StatusBar"></div>
-<div id="save-code"></div>
-<div id="load-code"></div>
+
 <div id="lucky-popup"></div>
 <hr>
 <table style="text-align: center; margin: auto;" width="75%">
@@ -91,6 +88,7 @@
 <script type="text/javascript" src="Jquerry.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="game.js"></script>
+<script type="text/javascript" src="quests.js"></script>
 <script type="text/javascript" src="achevements.js"></script>
 <script type="text/javascript" src="testingcheats.js"></script>
 </body>	

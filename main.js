@@ -2,6 +2,15 @@ Main = {};
 //Instantiate main game function
 
 	$(function(){
+		$("#Quests").click(function(event) {
+			event.preventDefault();
+			document.getElementById('StatusBar').innerHTML =  ("<p>Current Quest: " + Quest.CurrentQuest+"</p>");
+			Achievement.Time = 0;
+		});
+	}
+);
+
+	$(function(){
 		//Pickaxe waits for click here. Calls event.
 		$("#Pick").click(function(event) {
 			event.preventDefault();
