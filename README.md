@@ -1,6 +1,6 @@
 ################################
 ## Forbidden Forest
-## Version: 0.0.20
+## Version: 0.2.48
 ## Authors:  Daniel "TNTWZRD" Jajliardo and Corbin "Spritsinz" Matschull
 ## Contact Us: Daniel: DanielJajliardo@gmail.com, Corbin: jquery9dev@gmail.com
 ## Our Website: www.chessmenink.tk
