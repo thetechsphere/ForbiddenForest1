@@ -1,4 +1,5 @@
 Game = {};
+Game.Data = {};
 Game.Get = {};
 Game.ToolLevels = {};
 
@@ -6,12 +7,12 @@ Game.Get.ToolLevels = {};
 Game.ToolLevels.PickLevel = 1;
 Game.ToolLevels.AxeLevel = 1;
 Game.ToolLevels.ShovelLevel = 1;
-Game.Iron = 0;
-Game.Stone = 0;
-Game.Dirt = 0;
-Game.Sod = 0;
-Game.Wood = 0;
-Game.Leaves = 0;
+Game.Data.Iron = 0;
+Game.Data.Stone = 0;
+Game.Data.Dirt = 0;
+Game.Data.Sod = 0;
+Game.Data.Wood = 0;
+Game.Data.Leaves = 0;
 
 /*
 *Probability function is completed as thus:
@@ -30,18 +31,16 @@ Game.Update = function(){
 
 	if(Achievement.Time >= 10){
 		document.getElementById('StatusBar').innerHTML =  ("<br> ");
-		document.getElementById('save-code').innerHTML =  ("");
-		document.getElementById('load-code').innerHTML =  ("");
 	}else{
 		Achievement.Time+=1;
 	}
 	
-	document.getElementById('Stone').innerHTML =  ("Stone: " + Game.Stone);
-	document.getElementById('Iron').innerHTML =  ("Iron: " + Game.Iron);
-	document.getElementById('Dirt').innerHTML =  ("Dirt: " + Game.Dirt);
-	document.getElementById('Sod').innerHTML =  ("Sod: " + Game.Sod);
-	document.getElementById('Wood').innerHTML =  ("Wood: " + Game.Wood);
-	document.getElementById('Leaves').innerHTML =  ("Leaves: " + Game.Leaves);
+	document.getElementById('Stone').innerHTML =  ("Stone: " + Game.Data.Stone);
+	document.getElementById('Iron').innerHTML =  ("Iron: " + Game.Data.Iron);
+	document.getElementById('Dirt').innerHTML =  ("Dirt: " + Game.Data.Dirt);
+	document.getElementById('Sod').innerHTML =  ("Sod: " + Game.Data.Sod);
+	document.getElementById('Wood').innerHTML =  ("Wood: " + Game.Data.Wood);
+	document.getElementById('Leaves').innerHTML =  ("Leaves: " + Game.Data.Leaves);
 	
 	Game.ToolLevels.MiningSpeed = Math.round((Game.ToolLevels.PickLevel / 3) + 1);
 	Game.MasterMiner();
@@ -58,12 +57,12 @@ Game.Pick = function(){
 	*If it equals 1, get iron
 	*/
 	if(Math.floor(Math.random() * 6) + 1 == 1){
-		Game.Iron = Game.Iron + Math.round((1 * (Game.ToolLevels.PickLevel / 4) + 1));
+		Game.Data.Iron = Game.Data.Iron + Math.round((1 * (Game.ToolLevels.PickLevel / 4) + 1));
 		if(Achievement.Var.MinedIron != 1){
 			Achievement.Get.MinedIron(); 
 		}
 	} else{
-		Game.Stone = Game.Stone + Math.round((1 * (Game.ToolLevels.PickLevel / 2) + 1));
+		Game.Data.Stone = Game.Data.Stone + Math.round((1 * (Game.ToolLevels.PickLevel / 2) + 1));
 	}
 	Game.Update();
 
@@ -75,12 +74,12 @@ Game.Axe = function(){
 	}
 	
 	if(Math.floor(Math.random() * 25) + 1 == 1){
-		Game.Leaves = Game.Leaves + Math.round((1 * (Game.ToolLevels.AxeLevel / 4) + 1));
+		Game.Data.Leaves = Game.Data.Leaves + Math.round((1 * (Game.ToolLevels.AxeLevel / 4) + 1));
 		if(Achievement.Var.ChoppedLeaves != 1){
 			Achievement.Get.ChoppedLeaves(); 
 		}
 	}else{
-		Game.Wood = Game.Wood + Math.round((1 * (Game.ToolLevels.AxeLevel / 2) + 1));
+		Game.Data.Wood = Game.Data.Wood + Math.round((1 * (Game.ToolLevels.AxeLevel / 2) + 1));
 	}
 	Game.Update();
 };
@@ -90,12 +89,12 @@ Game.Dig = function(){
 		Achievement.Get.DugDirt(); 
 	}
 	if(Math.floor(Math.random() * 6) + 1 == 1){
-		Game.Sod = Game.Sod + Math.round((1 * (Game.ToolLevels.ShovelLevel / 4) + 1));
+		Game.Data.Sod = Game.Data.Sod + Math.round((1 * (Game.ToolLevels.ShovelLevel / 4) + 1));
 		if(Achievement.Var.DugSod != 1){
 			Achievement.Get.DugSod(); 
 		}
 	}else{
-		Game.Dirt = Game.Dirt + Math.round((1 * (Game.ToolLevels.ShovelLevel / 2) + 1));
+		Game.Data.Dirt = Game.Data.Dirt + Math.round((1 * (Game.ToolLevels.ShovelLevel / 2) + 1));
 	}
 	Game.Update();
 };
@@ -111,24 +110,24 @@ Game.MasterMiner = function(){
 };
 
 Game.PickUpgrade = function(){
-	Game.Stone -= Math.round(50 * (1 + .15 * Game.ToolLevels.PickLevel));
-	Game.Wood -= Math.round(10 * (1 + .15 * Game.ToolLevels.PickLevel));
+	Game.Data.Stone -= Math.round(50 * (1 + .15 * Game.ToolLevels.PickLevel));
+	Game.Data.Wood -= Math.round(10 * (1 + .15 * Game.ToolLevels.PickLevel));
 	Game.ToolLevels.PickLevel += 1;
 	if(Achievement.Var.Upgrading != 1){ Achievement.Get.Upgrading(); }
 	Game.Update();
 };
 
 Game.AxeUpgrade = function(){
-	Game.Stone -= Math.round(50 * (1 + .15 * Game.ToolLevels.AxeLevel));
-	Game.Wood -= Math.round(10 * (1 + .15 * Game.ToolLevels.AxeLevel));
+	Game.Data.Stone -= Math.round(50 * (1 + .15 * Game.ToolLevels.AxeLevel));
+	Game.Data.Wood -= Math.round(10 * (1 + .15 * Game.ToolLevels.AxeLevel));
 	Game.ToolLevels.AxeLevel += 1;
 	if(Achievement.Var.Upgrading != 1){ Achievement.Get.Upgrading(); }
 	Game.Update();
 };
 
 Game.ShovelUpgrade = function(){
-	Game.Stone -= Math.round(50 * (1 + .15 * Game.ToolLevels.ShovelLevel));
-	Game.Wood -= Math.round(10 * (1 + .15 * Game.ToolLevels.ShovelLevel));
+	Game.Data.Stone -= Math.round(50 * (1 + .15 * Game.ToolLevels.ShovelLevel));
+	Game.Data.Wood -= Math.round(10 * (1 + .15 * Game.ToolLevels.ShovelLevel));
 	Game.ToolLevels.ShovelLevel += 1;
 	if(Achievement.Var.Upgrading != 1){ Achievement.Get.Upgrading(); }
 	Game.Update();

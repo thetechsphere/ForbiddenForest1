@@ -48,7 +48,6 @@
 			
 		
 <div id="StatusBar"></div>
-
 <div id="lucky-popup"></div>
 <hr>
 <table style="text-align: center; margin: auto;" width="75%">
@@ -84,12 +83,12 @@
 <hr>
 	</div>
 </div>
-<script type="text/javascript" src="save-game.js"></script>
 <script type="text/javascript" src="Jquerry.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="game.js"></script>
 <script type="text/javascript" src="quests.js"></script>
 <script type="text/javascript" src="achevements.js"></script>
 <script type="text/javascript" src="testingcheats.js"></script>
+<script type="text/javascript" src="save-game.js"></script>
 </body>	
 </html>
