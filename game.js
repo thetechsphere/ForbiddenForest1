@@ -21,6 +21,7 @@ Game.Data.Leaves = 0;
 *}
 */
 
+//Testing for tool levels.
 Game.TestFor = function(){
 	if(Game.ToolLevels.PickLevel >= 100 && Achievement.Var.MasterUpgrader != 1){ Achievement.Get.MasterUpgrader(); }
 	if(Game.ToolLevels.AxeLevel >= 100 && Achievement.Var.MasterUpgrader != 1){ Achievement.Get.MasterUpgrader(); }
@@ -28,13 +29,12 @@ Game.TestFor = function(){
 };
 
 Game.Update = function(){
-
 	if(Achievement.Time >= 10){
 		document.getElementById('StatusBar').innerHTML =  ("<br> ");
 	}else{
 		Achievement.Time+=1;
 	}
-	
+	//Gather document ID Data and display correct data.
 	document.getElementById('Stone').innerHTML =  ("Stone: " + Game.Data.Stone);
 	document.getElementById('Iron').innerHTML =  ("Iron: " + Game.Data.Iron);
 	document.getElementById('Dirt').innerHTML =  ("Dirt: " + Game.Data.Dirt);
@@ -42,7 +42,7 @@ Game.Update = function(){
 	document.getElementById('Wood').innerHTML =  ("Wood: " + Game.Data.Wood);
 	document.getElementById('Leaves').innerHTML =  ("Leaves: " + Game.Data.Leaves);
 	
-	Game.ToolLevels.MiningSpeed = Math.round((Game.ToolLevels.PickLevel / 3) + 1);
+	Game.ToolLevels.MiningSpeed = Math.round((Game.ToolLevels.PickLevel / 3) + 1);//Divide tool level by 3 
 	Game.MasterMiner();
 	
 	Game.TestFor();
@@ -56,12 +56,12 @@ Game.Pick = function(){
 	*Get math floor and create a random chance(1-6)
 	*If it equals 1, get iron
 	*/
-	if(Math.floor(Math.random() * 6) + 1 == 1){
+	if(Math.floor(Math.random() * 6) + 1 == 1){//Here we create a math floor and start a random chance of 1 to 6.
 		Game.Data.Iron = Game.Data.Iron + Math.round((1 * (Game.ToolLevels.PickLevel / 4) + 1));
 		if(Achievement.Var.MinedIron != 1){
 			Achievement.Get.MinedIron(); 
 		}
-	} else{
+	}else{
 		Game.Data.Stone = Game.Data.Stone + Math.round((1 * (Game.ToolLevels.PickLevel / 2) + 1));
 	}
 	Game.Update();
