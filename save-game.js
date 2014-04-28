@@ -9,19 +9,16 @@ SaveGame = {};
 LoadGame = {};
 
 SaveGame.SaveAll = function(){
-	/* Backup in case LocalStorage Breaks! :)
-	SaveGame.All = Game.ToolLevels.ShovelLevel + " " + Game.ToolLevels.AxeLevel + " " + Game.ToolLevels.PickLevel + " " + Game.Data.Iron + " " + Game.Data.Stone + " " + Game.Data.Dirt + " " + Game.Data.Sod + " " + Game.Data.Wood + " " + Game.Data.Leaves + " " + Achievement.Var.MinedStone + " " + Achievement.Var.MinedIron + " " + Achievement.Var.DugDirt + " " + Achievement.Var.DugSod + " " + Achievement.Var.ChopTree + " " + Achievement.Var.ChoppedLeaves + " " + Achievement.Var.PunchedAPig + " " + Achievement.Var.CheaterCheater + " " + Achievement.Var.MasterMiner + " " + Achievement.Var.MasterUpgrader + " " + Achievement.Var.Upgrading;
-
-	SaveGame.EncodeText = btoa(SaveGame.All);
-	
-	//alert("Your Save Game Code: " + SaveGame.EncodeText + ", Write This Code down For Loading Use Later! :)");
-	document.getElementById('StatusBar').innerHTML =  ("<p>Save code, copy this and save it somewhere: " + SaveGame.EncodeText + "</p>");
-	*/
-	
+	if(!localStorage){
+		SaveGame.All = Game.ToolLevels.ShovelLevel + " " + Game.ToolLevels.AxeLevel + " " + Game.ToolLevels.PickLevel + " " + Game.Data.Iron + " " + Game.Data.Stone + " " + Game.Data.Dirt + " " + Game.Data.Sod + " " + Game.Data.Wood + " " + Game.Data.Leaves + " " + Achievement.Var.MinedStone + " " + Achievement.Var.MinedIron + " " + Achievement.Var.DugDirt + " " + Achievement.Var.DugSod + " " + Achievement.Var.ChopTree + " " + Achievement.Var.ChoppedLeaves + " " + Achievement.Var.PunchedAPig + " " + Achievement.Var.CheaterCheater + " " + Achievement.Var.MasterMiner + " " + Achievement.Var.MasterUpgrader + " " + Achievement.Var.Upgrading;
+		SaveGame.EncodeText = btoa(SaveGame.All);
+		document.getElementById('StatusBar').innerHTML =  ("<p>Save code, copy this and save it somewhere: " + SaveGame.EncodeText + "</p>");
+	}else{
 	localStorage.setItem("Game.ToolLevels", btoa(JSON.stringify(Game.ToolLevels)));
 	localStorage.setItem("Game.Data", btoa(JSON.stringify(Game.Data)));
 	localStorage.setItem("Achievement.Var", btoa(JSON.stringify(Achievement.Var)));
 	document.getElementById('StatusBar').innerHTML =  ("<p>Your Game Has Been Saved!</p>")
+	}
 };
 
 LoadGame.LoadAll = function(){
