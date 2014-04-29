@@ -84,9 +84,11 @@
 	</div>
 </div>
 <script type="text/javascript">
-if(navigator.cookiesEnabled()==false){window.stop();
-confirm("This page depends on cookies being enabled!\nPlease enable cookies then press ok.");
-while(navigator.cookiesEnabled()==false{confirm("This page depends on cookies being enabled!\nPlease enable cookies then press ok.");
+if(navigator.cookiesEnabled()==false){
+	window.stop();
+	confirm("This page depends on cookies being enabled!\nPlease enable cookies then press ok.");
+while(navigator.cookiesEnabled()==false){
+	confirm("This page depends on cookies being enabled!\nPlease enable cookies then press ok.");
 }else{location.reload();}}
 </script>
 <script type="text/javascript" src="Jquerry.min.js"></script>
